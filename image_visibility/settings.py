@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,11 +42,14 @@ INSTALLED_APPS = [
 ]
 
 MY_APPS=[
-    'yt_ftp'
+    "debug_toolbar",
+    "rest_framework",
+    "yt_ftp",
 ]
 
 INSTALLED_APPS+=MY_APPS
 
+MY_MIDDLEWARE=["debug_toolbar.middleware.DebugToolbarMiddleware",]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -54,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+MIDDLEWARE+=MY_MIDDLEWARE
 
 ROOT_URLCONF = 'image_visibility.urls'
 
