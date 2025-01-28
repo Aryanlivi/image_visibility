@@ -1,0 +1,15 @@
+venv/
+.env
+env/
+# Media and static files
+/media/
+/staticfiles/
+
+# Ignore .env files, as they may contain sensitive data
+.env
+
+#Ignore Python cache files
+*.pyc
+
+#Ignore Python object files
+*.pyo
