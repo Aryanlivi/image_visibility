@@ -37,7 +37,7 @@ class ImageMetadata(models.Model):
         related_name='image_metadata', 
         null=False, blank=False  # This is required as it is a one-to-one relationship
     )
-    device_id = models.IntegerField(primary_key=True)  # Use device_id as the primary key
+    device_id = models.IntegerField(unique=True)  # Use device_id as the primary key
     devicecode = models.CharField(max_length=100)
     album_code = models.CharField(max_length=100)
     latitude = models.FloatField()

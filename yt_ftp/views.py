@@ -5,6 +5,6 @@ from .serializers import URLSerializer
 # Create your views here.
 
 class URLViewSet(ModelViewSet):
-    http_method_names = ['get','post','patch','head','options']
+    http_method_names = ['get','post','patch','delete','head','options']
     queryset=URL.objects.all()
     serializer_class=URLSerializer
