@@ -14,7 +14,6 @@ class URLSerializer(serializers.ModelSerializer):
     class Meta:
         model = URL
         fields = ['id','url','name','active','capture_interval', 'image_metadata']
-        read_only_fields=['active']
     
     def create(self, validated_data):
         # Extract image_metadata from validated_data
@@ -45,5 +44,4 @@ class URLSerializer(serializers.ModelSerializer):
             for attr, value in image_metadata_data.items():
                 setattr(image_metadata_instance, attr, value)
             image_metadata_instance.save()
-
         return instance 
