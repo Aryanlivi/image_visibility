@@ -9,5 +9,5 @@ class ImageMetadataInline(admin.StackedInline):
 @admin.register(URL)
 class URLAdmin(admin.ModelAdmin):
     inlines = [ImageMetadataInline]  
-    list_display = ('url', 'name', 'status', 'capture_interval', 'last_run', 'created_at', 'updated_at')
+    list_display = ('url', 'name', 'active', 'capture_interval', 'last_run', 'created_at', 'updated_at')
     search_fields = ('url', 'name')

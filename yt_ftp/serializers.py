@@ -13,7 +13,8 @@ class URLSerializer(serializers.ModelSerializer):
     image_metadata = ImageSerializer()
     class Meta:
         model = URL
-        fields = ['id','url', 'name', 'capture_interval', 'image_metadata']
+        fields = ['id','url','name','active','capture_interval', 'image_metadata']
+        read_only_fields=['active']
     
     def create(self, validated_data):
         # Extract image_metadata from validated_data
@@ -36,7 +37,7 @@ class URLSerializer(serializers.ModelSerializer):
         # Update the URL instance fields
         for attr, value in validated_data.items():
             setattr(instance, attr, value)
-        instance.save()
+        instance.save()  
 
         # If image_metadata is present, update or create the related instance
         if image_metadata_data:

@@ -2,20 +2,8 @@ from django.db import models
 
 class URL(models.Model):
     url = models.URLField(unique=True)
-    name = models.CharField(max_length=50,db_index=True)
-
-
-    # Status of the URL processing
-    STATUS_CHOICES = [
-        ('pending', 'Pending'),
-        ('running', 'Running'),
-        ('stopped', 'Stopped'),
-    ]
-    status = models.CharField(
-        max_length=20, 
-        choices=STATUS_CHOICES, 
-        default='pending',  # Default value when the status is not specified
-    )
+    name = models.CharField(max_length=50,db_index=True)  
+    active =models.BooleanField(default=True)
     
     # Store the capture interval as seconds
     capture_interval = models.PositiveIntegerField(
@@ -28,7 +16,7 @@ class URL(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.url
+        return self.name
     
 class ImageMetadata(models.Model):
     url = models.OneToOneField(
@@ -42,8 +30,8 @@ class ImageMetadata(models.Model):
     album_code = models.CharField(max_length=100)
     latitude = models.FloatField()
     longitude = models.FloatField()
-    altitude = models.FloatField()
+    altitude = models.FloatField() 
     imageowner = models.CharField(max_length=100)
     angle = models.FloatField()
     def __str__(self):
-        return f"Metadata for {self.devicecode}"
+        return f"Metadata for {self.url.name}"
