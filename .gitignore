@@ -13,3 +13,5 @@ env/
 
 #Ignore Python object files
 *.pyo
+
+*.jpg

@@ -46,10 +46,10 @@ class YoutubeHandler:
         """
         try:
             command = ["yt-dlp", "-g", "-f", "best", self.url]
-            logger.info("Extracting video stream URL...")
+            # logger.info("Extracting video stream URL...")
             result = subprocess.run(command, capture_output=True, text=True, check=True)
             stream_url = result.stdout.strip()
-            logger.info("Stream URL extracted successfully.")
+            # logger.info("Stream URL extracted successfully.")
             return stream_url
         except subprocess.CalledProcessError as e:
             logger.error(f"Error extracting video stream URL: {e}")
@@ -82,9 +82,9 @@ class YoutubeHandler:
         ]
 
         try:
-            logger.info(f"Capturing screenshot at {capture_time}...")
+            # logger.info(f"Capturing screenshot at {capture_time}...")
             subprocess.run(command, check=True)
-            logger.info(f"Screenshot saved to {saving_dir} at {capture_time}.")
+            # logger.info(f"Screenshot saved to {saving_dir} at {capture_time}.")
             return saving_dir, capture_time
         except subprocess.CalledProcessError as e:
             logger.error(f"Error capturing screenshot: {e}")

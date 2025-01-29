@@ -13,9 +13,13 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 from decouple import config
 import os
+# from celery.schedules import crontab
+from datetime import timedelta
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,6 +34,28 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+# Celery Configuration
+CELERY_BROKER_URL = "redis://localhost:6379/0"  # Use Redis for queuing
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+
+# Store Celery task results in PostgreSQL
+CELERY_RESULT_BACKEND = "django-db"
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+
+
+CELERY_WORKER_CONCURRENCY = 4  # Set fixed number of workers (instead of using --concurrency on command line)
+
+# Optionally, configure autoscaling if you prefer this way
+CELERY_WORKER_AUTOSCALE = (10, 4)  # Maximum 10, minimum 4 workers 
+
+CELERY_BEAT_SCHEDULE = {
+    'process-urls-every-10-minutes': {
+        'task': 'yt_ftp.tasks.process_all_urls',
+        'schedule':timedelta(seconds=10),  # Every 10 minutes  
+    },
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,10 +65,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "corsheaders"
+    "corsheaders",
 ]
 
 MY_APPS=[
+    "django_celery_results",
     "debug_toolbar",
     "rest_framework",
     "yt_ftp",
