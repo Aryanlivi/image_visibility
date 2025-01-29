@@ -30,18 +30,35 @@ class URLSerializer(serializers.ModelSerializer):
         return url_instance
     
     def update(self, instance, validated_data):
-        # Extract and update nested image_metadata
         image_metadata_data = validated_data.pop('image_metadata', None)
+
+        #USING URL_UPDATED TO CALL SAVE METHOD EVEN FOR CHANGES IN IMAGE METADATA.
+
+        # Track whether the URL instance is updated
+        url_updated = False  
 
         # Update the URL instance fields
         for attr, value in validated_data.items():
-            setattr(instance, attr, value)
-        instance.save()  
+            if getattr(instance, attr) != value:  # Only update if changed
+                setattr(instance, attr, value)
+                url_updated = True  
+
+        if url_updated:  
+            instance.save()  # Only save if actual changes happened  
 
         # If image_metadata is present, update or create the related instance
         if image_metadata_data:
-            image_metadata_instance = instance.image_metadata  # Related `ImageMetadata` instance
+            image_metadata_instance = instance.image_metadata
+            metadata_updated = False  
+
             for attr, value in image_metadata_data.items():
-                setattr(image_metadata_instance, attr, value)
-            image_metadata_instance.save()
-        return instance 
+                if getattr(image_metadata_instance, attr) != value:  # Check if values changed
+                    setattr(image_metadata_instance, attr, value)
+                    metadata_updated = True  
+
+            if metadata_updated:
+                image_metadata_instance.save()
+                instance.save()  # Save URL again to trigger post_save
+
+        return instance
+
