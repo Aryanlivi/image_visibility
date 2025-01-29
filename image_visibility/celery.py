@@ -10,8 +10,9 @@ app = Celery("image_visibility")
 # Load task modules from all registered Django app configs
 app.config_from_object("django.conf:settings", namespace="CELERY")
 
-app.conf.beat_schedule = settings.CELERY_BEAT_SCHEDULE
-app.conf.timezone = 'UTC'  # or your preferred timezone
+# app.conf.beat_schedule = settings.CELERY_BEAT_SCHEDULE
+# app.conf.timezone = 'UTC'  # or your preferred timezone
+app.conf.broker_url = settings.CELERY_BROKER_URL  # Set explicitly
 
 #configure autoscaling
 app.conf.worker_autoscaler = settings.CELERY_WORKER_AUTOSCALE

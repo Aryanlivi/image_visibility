@@ -49,12 +49,7 @@ CELERY_WORKER_CONCURRENCY = 4  # Set fixed number of workers (instead of using -
 # Optionally, configure autoscaling if you prefer this way
 CELERY_WORKER_AUTOSCALE = (10, 4)  # Maximum 10, minimum 4 workers 
 
-CELERY_BEAT_SCHEDULE = {
-    'process-urls-every-10-minutes': {
-        'task': 'yt_ftp.tasks.process_all_urls',
-        'schedule':timedelta(seconds=10),  # Every 10 minutes  
-    },
-}
+
 
 # Application definition
 
@@ -69,6 +64,7 @@ INSTALLED_APPS = [
 ]
 
 MY_APPS=[
+    "django_celery_beat",
     "django_celery_results",
     "debug_toolbar",
     "rest_framework",

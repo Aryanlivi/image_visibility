@@ -147,7 +147,6 @@ class ImageHandler:
                 logger.info(f"Uploaded file: {file_name}")
             
             self.delete_file_locally(file_name=file_to_upload)
-
             # Close the connection
             ftp.quit()
             logger.info("FTP connection closed.")
