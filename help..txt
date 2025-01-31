@@ -1,0 +1,20 @@
+celery -A image_visibility worker --pool=solo --loglevel=info                                      
+celery -A tasks beat --loglevel=info
+
+celery -A tasks worker --loglevel=info --concurrency=4
+
+celery -A image_visibility beat --scheduler django_celery_beat.schedulers:DatabaseScheduler --loglevel=info --logfile=celery_beat.log
+
+change redis.conf 
+
+
+
+export DJANGO_SETTINGS_MODULE="image_visibility.settings"
+celery -A yt_ftp.tasks worker --loglevel=info --autoscale=10,4
+
+
+
+redis-server --save "" --appendonly no --protected-mode no &
+celery -A image_visibility beat --scheduler image_visibility.schedulers.CustomScheduler --loglevel=DEBUG --logfile=celery_beat.log 
+celery -A image_visibility worker --loglevel=info    
+celery -A image_visibility flower

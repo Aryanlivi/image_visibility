@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 import debug_toolbar
+from django.http import HttpResponse
+from django.urls import re_path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    re_path(r'^favicon\.ico$', lambda request: HttpResponse(status=204)),
     path("__debug__/", include("debug_toolbar.urls")),
     path("yt_ftp",include("yt_ftp.urls")) 
 ]

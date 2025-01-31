@@ -1,0 +1,100 @@
+[2025-01-31 16:41:56,894: DEBUG/MainProcess] Setting default socket timeout to 30
+[2025-01-31 16:41:56,895: INFO/MainProcess] beat: Starting...
+[2025-01-31 16:41:56,901: DEBUG/MainProcess] DatabaseScheduler: initial read
+[2025-01-31 16:41:56,902: DEBUG/MainProcess] Writing entries...
+[2025-01-31 16:41:56,902: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-01-31 16:41:56,964: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-01-31 16:41:57,055: DEBUG/MainProcess] beat: Ticking with max interval->5.00 seconds
+[2025-01-31 16:41:57,155: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-01-31 16:41:57,487: DEBUG/MainProcess] Writing entries...
+[2025-01-31 16:41:57,487: DEBUG/MainProcess] Writing entries...
+[2025-01-31 16:41:57,488: DEBUG/MainProcess] Writing entries...
+[2025-01-31 16:41:57,488: DEBUG/MainProcess] Writing entries...
+[2025-01-31 16:42:05,508: INFO/MainProcess] beat: Starting...
+[2025-01-31 16:45:49,986: INFO/MainProcess] beat: Starting...
+[2025-01-31 16:46:20,094: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-01-31 16:46:40,187: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:46:50,200: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:47:00,225: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:47:20,241: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:47:20,296: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:47:40,334: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:47:50,295: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:48:00,376: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:48:20,341: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:48:20,391: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:48:40,438: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:48:50,382: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:49:00,476: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:49:20,427: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:49:20,493: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:49:40,534: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:49:50,468: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:50:00,601: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:50:20,502: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:50:20,642: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:50:40,676: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:50:50,542: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:51:00,695: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:51:20,587: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:51:20,736: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:51:40,779: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:51:50,634: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:52:00,828: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:52:20,672: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:52:20,859: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:52:40,899: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:52:50,713: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:53:00,932: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:53:20,754: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:53:20,972: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:53:41,014: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:53:50,799: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:54:01,058: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:54:20,845: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:54:21,099: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:54:41,153: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:54:50,898: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:55:01,197: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:55:20,947: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:55:21,253: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:55:41,302: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:55:50,998: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:56:01,348: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:56:21,045: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:56:21,393: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:56:41,432: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:56:51,087: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:57:01,475: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:57:21,126: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:57:21,516: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:57:41,561: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:57:51,167: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:58:01,603: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:58:21,212: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:58:21,639: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:58:41,806: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:58:51,259: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:59:01,842: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:59:21,307: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 16:59:21,901: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:59:41,973: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 16:59:51,361: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:00:02,108: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:00:21,398: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:00:22,153: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:00:42,200: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:00:51,434: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:01:02,249: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:01:21,473: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:01:22,294: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:01:42,344: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:01:51,514: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:02:02,389: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:02:21,556: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:02:22,435: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:02:42,587: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)

@@ -48,8 +48,8 @@ CELERY_WORKER_CONCURRENCY = 4  # Set fixed number of workers (instead of using -
 
 # Optionally, configure autoscaling if you prefer this way
 CELERY_WORKER_AUTOSCALE = (10, 4)  # Maximum 10, minimum 4 workers 
-
-
+CELERY_BEAT_PERIODIC_TASK_MODEL = 'yt_ftp.models.CustomPeriodicTask'
+CELERY_BEAT_SCHEDULER = 'image_visibility.schedulers.CustomScheduler'
 
 # Application definition
 

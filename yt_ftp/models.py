@@ -1,4 +1,5 @@
 from django.db import models
+from django_celery_beat.models import PeriodicTask
 
 class URL(models.Model):
     url = models.URLField(unique=True)
@@ -33,5 +34,14 @@ class ImageMetadata(models.Model):
     altitude = models.FloatField() 
     imageowner = models.CharField(max_length=100)
     angle = models.FloatField()
-    def __str__(self):
+    def __str__(self): 
         return f"Metadata for {self.url.name}"
+
+
+class CustomPeriodicTask(PeriodicTask):
+    url_instance = models.ForeignKey(URL, on_delete=models.CASCADE, null=True, blank=True)
+    
+    def __str__(self):
+        return f"{self.name}"
+    class Meta:
+        verbose_name = "Custom Periodic Task"
