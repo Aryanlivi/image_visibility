@@ -16,5 +16,5 @@ celery -A yt_ftp.tasks worker --loglevel=info --autoscale=10,4
 
 redis-server --save "" --appendonly no --protected-mode no &
 celery -A image_visibility beat --scheduler image_visibility.schedulers.CustomScheduler --loglevel=DEBUG --logfile=celery_beat.log 
-celery -A image_visibility worker --loglevel=info    
+celery -A image_visibility worker --pool=solo --loglevel=info   
 celery -A image_visibility flower

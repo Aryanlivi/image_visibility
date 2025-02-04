@@ -98,3 +98,883 @@
 [2025-01-31 17:02:21,556: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
 [2025-01-31 17:02:22,435: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
 [2025-01-31 17:02:42,587: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:02:51,614: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:03:02,629: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:03:21,664: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:03:22,664: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:03:42,703: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:03:51,715: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:04:02,733: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:04:21,761: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:04:22,768: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:04:42,809: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:04:51,811: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:05:02,853: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:05:21,847: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:05:22,896: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:05:42,941: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:05:51,892: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:06:02,989: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:06:21,936: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:06:23,032: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:06:43,064: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:06:51,972: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:07:03,103: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:07:22,019: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:07:23,138: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:07:43,177: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:07:52,066: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:08:03,225: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:08:22,109: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:08:23,272: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:08:43,337: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:08:52,167: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:09:03,396: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:09:22,220: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:09:23,442: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:09:43,480: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:09:52,262: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:10:03,525: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:10:22,309: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:10:23,571: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:10:43,626: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:10:52,343: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:11:03,668: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:11:22,389: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:11:23,714: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:11:43,781: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:11:52,427: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:12:03,819: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:12:22,478: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:12:23,864: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:12:44,010: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:12:52,528: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:13:04,055: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:13:22,574: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:13:24,093: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:13:44,141: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:13:52,614: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:14:04,197: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:14:22,664: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:14:24,235: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:14:44,273: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:14:52,709: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:15:04,313: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:15:22,764: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:15:24,355: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:15:44,408: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:15:52,803: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:16:04,457: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:16:22,858: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:16:24,524: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:16:44,565: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:16:52,908: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:17:04,621: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:17:22,954: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:17:24,669: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:17:44,713: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:17:52,999: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:18:04,751: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:18:23,055: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:18:24,802: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:18:44,861: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:18:53,100: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:19:04,899: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:19:23,160: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:19:24,939: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:19:44,987: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:19:53,210: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:20:05,026: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:20:23,248: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:20:25,091: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:20:45,131: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:20:53,299: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:21:05,176: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:21:23,332: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:21:25,219: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:21:45,269: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:21:53,370: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:22:05,314: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:22:23,443: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:22:25,362: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:22:45,406: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:22:53,487: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:23:05,461: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:23:23,550: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:23:25,505: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:23:45,538: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:23:53,610: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:24:05,573: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:24:23,647: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:24:25,624: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:24:45,674: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:24:53,686: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:25:05,724: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:25:23,723: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:25:25,781: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:25:45,832: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:25:53,779: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:26:05,878: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:26:23,813: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:26:25,913: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:26:45,957: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:26:53,868: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:27:06,006: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:27:23,924: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:27:26,049: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:27:46,104: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:27:53,972: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:28:06,149: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:28:24,012: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:28:26,190: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:28:46,258: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:28:54,060: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:29:06,325: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:29:24,107: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:29:26,378: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:29:46,436: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:29:54,190: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:30:06,466: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:30:24,241: INFO/MainProcess] Scheduler: Sending due task Process_URL_Naamche (yt_ftp.tasks.process_url)
+[2025-01-31 17:30:26,530: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-01-31 17:30:36,689: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-01-31 17:30:41,883: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:12:56,866: DEBUG/MainProcess] Setting default socket timeout to 30
+[2025-02-04 11:12:56,866: INFO/MainProcess] beat: Starting...
+[2025-02-04 11:12:56,872: DEBUG/MainProcess] DatabaseScheduler: initial read
+[2025-02-04 11:12:56,872: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:12:56,873: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:12:56,939: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:12:57,054: DEBUG/MainProcess] beat: Ticking with max interval->5.00 seconds
+[2025-02-04 11:12:57,143: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:02,147: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:13:02,147: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:13:02,193: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:07,235: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:12,286: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:17,336: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:22,382: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:27,437: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:32,485: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:37,527: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:42,587: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:47,638: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:52,701: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:13:57,742: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:02,798: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:07,850: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:12,908: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:17,962: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:23,018: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:28,073: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:33,119: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:38,163: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:43,221: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:48,268: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:53,322: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:14:58,382: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:03,433: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:08,492: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:13,560: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:18,638: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:23,695: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:28,749: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:33,799: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:38,856: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:43,910: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:48,960: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:54,019: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:15:59,061: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:04,064: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:16:04,065: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:16:04,118: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:09,169: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:14,232: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:16:14,232: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:16:14,232: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:16:14,284: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:16:14,391: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:19,450: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:24,507: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:29,549: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:34,607: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:39,652: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:44,702: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:49,755: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:54,801: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:16:59,845: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:04,914: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:09,964: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:15,038: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:20,100: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:25,158: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:30,207: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:35,271: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:40,329: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:45,371: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:50,416: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:17:55,467: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:00,516: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:05,584: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:10,641: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:15,699: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:20,762: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:25,825: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:30,874: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:35,925: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:40,972: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:46,040: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:51,092: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:18:56,143: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:19:01,212: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:19:06,220: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:19:06,221: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:19:06,270: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:19:06,270: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:19:06,271: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:19:06,325: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+<ModelEntry: Process_URL_Everest yt_ftp.tasks.process_url(*[83], **{}) <freq: 10.00 seconds>>
+[2025-02-04 11:19:06,421: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:19:11,468: DEBUG/MainProcess] beat: Waking up in 4.85 seconds.
+[2025-02-04 11:19:16,480: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:19:16,545: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->98ad5115-8d8e-4b28-a690-5a17005f845b
+[2025-02-04 11:19:16,602: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:19:21,660: DEBUG/MainProcess] beat: Waking up in 4.81 seconds.
+[2025-02-04 11:19:26,516: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:19:26,518: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->0f586e8f-3da1-43c6-bad9-8976badb1cfe
+[2025-02-04 11:19:26,571: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:19:31,645: DEBUG/MainProcess] beat: Waking up in 4.86 seconds.
+[2025-02-04 11:19:36,564: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:19:36,565: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->bef258ce-063d-4570-a808-8350b78c661e
+[2025-02-04 11:19:36,608: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:19:41,659: DEBUG/MainProcess] beat: Waking up in 4.90 seconds.
+[2025-02-04 11:19:46,632: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:19:46,633: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->cb17d930-34a5-4757-aaf9-01e80f38a5e8
+[2025-02-04 11:19:46,680: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:19:51,735: DEBUG/MainProcess] beat: Waking up in 4.89 seconds.
+[2025-02-04 11:19:56,685: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:19:56,688: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->c3ef70b2-148e-46ff-9b1c-98392dbac33c
+[2025-02-04 11:19:56,733: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:20:01,780: DEBUG/MainProcess] beat: Waking up in 4.90 seconds.
+[2025-02-04 11:20:06,729: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:20:06,731: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->93b9c3cc-83b4-4a47-af3c-a83292bfa81e
+[2025-02-04 11:20:06,772: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:20:11,839: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:20:11,839: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:20:11,887: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:20:11,891: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+<ModelEntry: Process_URL_Everest yt_ftp.tasks.process_url(*[83], **{}) <freq: 10.00 seconds>>
+[2025-02-04 11:20:11,970: DEBUG/MainProcess] beat: Waking up in 4.75 seconds.
+[2025-02-04 11:20:16,777: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:20:16,778: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->0cf17694-aa2d-48a9-8cc0-e6a665c16a3f
+[2025-02-04 11:20:16,820: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:20:21,889: DEBUG/MainProcess] beat: Waking up in 4.88 seconds.
+[2025-02-04 11:20:26,817: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:20:26,819: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->6606b176-a8d9-4c29-a776-368bf458c4a5
+[2025-02-04 11:20:26,871: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:20:31,933: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:20:31,934: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:20:31,982: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:20:31,986: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+<ModelEntry: Process_URL_Everest yt_ftp.tasks.process_url(*[83], **{}) <freq: 10.00 seconds>>
+[2025-02-04 11:20:32,065: DEBUG/MainProcess] beat: Waking up in 4.74 seconds.
+[2025-02-04 11:20:36,861: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:20:36,863: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->0e7df4ea-c26b-45cd-a43c-4227ec8d4166
+[2025-02-04 11:20:36,906: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:20:41,963: DEBUG/MainProcess] beat: Waking up in 4.89 seconds.
+[2025-02-04 11:20:46,919: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:20:46,920: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->bd2726c4-f6ff-47b2-8976-d27fee4a7ac0
+[2025-02-04 11:20:46,964: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:20:52,021: DEBUG/MainProcess] beat: Waking up in 4.89 seconds.
+[2025-02-04 11:20:56,965: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:20:56,967: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->b3e037ed-c449-4468-92fd-30a906b4c178
+[2025-02-04 11:20:57,014: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:21:02,054: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:21:02,054: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:21:02,105: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:21:02,108: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+<ModelEntry: Process_URL_Everest yt_ftp.tasks.process_url(*[83], **{}) <freq: 10.00 seconds>>
+[2025-02-04 11:21:02,190: DEBUG/MainProcess] beat: Waking up in 4.76 seconds.
+[2025-02-04 11:21:07,007: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:21:07,009: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->a6d0f32a-e4b8-4939-b7d8-78af90da396e
+[2025-02-04 11:21:07,055: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:21:12,132: DEBUG/MainProcess] beat: Waking up in 4.87 seconds.
+[2025-02-04 11:21:17,056: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:21:17,058: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->13b07418-34f6-47f7-b1ad-76ef7fed8824
+[2025-02-04 11:21:17,109: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:21:22,161: DEBUG/MainProcess] beat: Waking up in 4.89 seconds.
+[2025-02-04 11:21:27,106: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:21:27,107: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->8a914b1f-c01a-4431-9a98-1d834a03a098
+[2025-02-04 11:21:27,159: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:21:32,206: DEBUG/MainProcess] beat: Waking up in 4.89 seconds.
+[2025-02-04 11:21:37,143: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:21:37,145: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->c9c24972-806f-4217-9936-a7c9fff126c1
+[2025-02-04 11:21:37,187: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:21:42,266: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:21:42,266: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:21:42,326: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:21:42,332: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:21:42,434: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:21:47,477: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:21:52,540: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:21:57,597: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:02,649: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:22:02,649: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:22:02,650: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:22:02,698: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:22:02,820: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:07,835: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:22:07,835: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:22:07,887: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:12,945: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:22:12,945: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:22:12,946: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:22:12,991: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:22:13,077: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:18,128: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:22:18,128: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:22:18,128: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:22:18,176: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:22:18,264: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:23,311: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:28,357: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:33,417: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:38,486: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:43,535: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:48,608: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:53,659: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:22:58,718: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:03,773: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:08,842: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:13,892: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:18,946: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:24,004: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:29,181: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:34,230: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:39,286: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:44,338: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:49,397: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:54,445: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:23:59,489: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:04,532: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:09,576: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:14,624: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:19,672: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:24,740: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:29,794: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:34,835: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:39,892: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:44,940: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:49,987: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:24:49,987: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:24:49,987: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:24:50,033: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:24:50,119: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:24:55,188: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:24:55,188: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:24:55,189: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:24:55,250: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:24:55,358: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:00,410: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:05,457: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:10,460: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:25:10,460: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:25:10,502: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:15,561: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:20,604: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:25,653: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:30,715: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:25:30,715: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:25:30,716: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:25:30,761: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:25:30,842: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:35,885: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:25:35,885: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:25:35,886: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:25:35,932: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:25:36,013: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:41,063: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:46,135: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:51,202: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:25:56,246: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:01,313: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:06,365: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:11,408: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:16,473: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:21,529: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:26,577: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:31,623: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:36,683: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:41,742: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:46,797: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:51,844: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:26:56,910: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:01,972: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:27:01,972: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:27:01,972: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:27:02,025: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:27:02,112: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:07,165: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:12,231: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:27:12,231: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:27:12,232: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:27:12,288: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:27:12,386: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:17,443: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:22,519: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:27,571: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:32,632: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:37,685: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:42,729: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:47,782: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:52,837: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:27:57,898: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:02,961: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:08,018: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:13,034: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:28:13,035: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:28:13,108: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:18,170: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:23,220: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:28,269: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:28:28,270: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:28:28,270: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:28:28,314: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:28:28,396: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:33,446: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:28:33,447: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:28:33,447: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:28:33,493: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:28:33,576: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:38,621: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:43,670: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:48,743: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:53,829: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:28:58,906: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:03,981: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:09,037: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:14,080: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:19,134: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:24,181: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:29,253: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:34,301: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:39,351: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:44,405: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:49,454: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:54,508: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:29:59,557: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:04,616: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:09,675: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:14,733: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:19,808: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:24,861: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:29,919: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:34,974: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:40,030: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:45,087: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:50,131: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:30:55,185: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:00,238: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:05,295: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:10,351: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:15,357: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:31:15,357: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:31:15,397: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:20,455: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:25,514: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:30,582: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:35,638: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:40,704: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:45,752: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:50,824: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:31:55,876: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:00,930: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:05,999: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:11,047: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:16,105: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:21,154: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:26,211: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:31,265: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:36,346: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:41,396: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:46,456: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:51,518: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:32:56,569: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:01,626: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:06,677: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:11,730: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:16,777: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:21,836: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:26,889: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:31,945: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:36,997: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:42,044: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:47,091: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:52,139: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:33:57,188: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:02,241: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:07,296: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:12,348: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:17,357: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:34:17,357: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:34:17,399: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:22,453: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:27,507: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:32,550: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:37,754: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:42,799: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:47,864: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:52,918: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:34:57,967: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:03,022: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:08,062: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:13,117: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:18,169: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:23,225: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:28,283: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:33,327: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:38,375: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:43,423: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:48,469: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:53,529: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:35:53,529: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:35:53,530: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:35:53,576: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:35:53,656: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:35:58,714: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:36:03,772: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:36:03,772: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:36:03,773: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:36:03,822: DEBUG/MainProcess] Current schedule:
+<ModelEntry: Process_URL_Lukla yt_ftp.tasks.process_url(*[82], **{}) <freq: 10.00 seconds>>
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:36:03,903: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:36:08,952: DEBUG/MainProcess] beat: Waking up in 4.86 seconds.
+[2025-02-04 11:36:13,868: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:36:13,870: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->5fa336cb-f462-4148-89da-3f2d73d0b025
+[2025-02-04 11:36:13,917: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:36:18,970: DEBUG/MainProcess] beat: Waking up in 4.89 seconds.
+[2025-02-04 11:36:23,908: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:36:23,910: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->099789b3-e2d9-41bd-898f-77c055df6943
+[2025-02-04 11:36:23,963: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:36:29,018: DEBUG/MainProcess] beat: Waking up in 4.88 seconds.
+[2025-02-04 11:36:33,952: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:36:33,954: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->41cd534c-4040-4c53-af2e-92b3a464963f
+[2025-02-04 11:36:34,002: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:36:39,063: DEBUG/MainProcess] beat: Waking up in 4.88 seconds.
+[2025-02-04 11:36:44,000: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:36:44,003: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->d3eb157c-1ce4-49b5-8f7d-6470ca3608ea
+[2025-02-04 11:36:44,055: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:36:49,119: DEBUG/MainProcess] beat: Waking up in 4.87 seconds.
+[2025-02-04 11:36:54,039: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:36:54,040: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->72a6a955-fdaa-4945-b315-4b1f11507e10
+[2025-02-04 11:36:54,088: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:36:59,154: DEBUG/MainProcess] beat: Waking up in 4.88 seconds.
+[2025-02-04 11:37:04,073: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:37:04,075: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->62b00579-a3d4-48e0-ace1-3c740d2e4bf0
+[2025-02-04 11:37:04,116: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:37:09,161: DEBUG/MainProcess] beat: Waking up in 4.90 seconds.
+[2025-02-04 11:37:14,120: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:37:14,122: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->30cc44be-c538-4cea-8dd1-288c7833bf2f
+[2025-02-04 11:37:14,163: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:37:19,172: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:37:19,172: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:37:19,271: DEBUG/MainProcess] beat: Waking up in 4.84 seconds.
+[2025-02-04 11:37:24,174: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:37:24,176: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->54db508e-7555-41e8-8c8d-19e4bccfe375
+[2025-02-04 11:37:24,232: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:37:29,278: DEBUG/MainProcess] beat: Waking up in 4.89 seconds.
+[2025-02-04 11:37:34,218: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:37:34,219: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->ba871ceb-b917-43ec-a183-5257731775b4
+[2025-02-04 11:37:34,263: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:37:39,311: DEBUG/MainProcess] beat: Waking up in 4.90 seconds.
+[2025-02-04 11:37:44,273: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:37:44,274: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:37:44,324: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:37:44,327: DEBUG/MainProcess] Current schedule:
+<ModelEntry: Process_URL_Lukla yt_ftp.tasks.process_url(*[82], **{}) <freq: 10.00 seconds>>
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:37:44,410: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:37:44,411: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->9c791a39-5242-42f3-9b79-b9fe94019128
+[2025-02-04 11:37:44,451: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:37:49,501: DEBUG/MainProcess] beat: Waking up in 4.90 seconds.
+[2025-02-04 11:37:54,458: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:37:54,459: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->2224b553-0f53-40ea-b20e-651c97058432
+[2025-02-04 11:37:54,500: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:37:59,546: DEBUG/MainProcess] beat: Waking up in 4.90 seconds.
+[2025-02-04 11:38:04,508: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:04,509: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->f7bc842e-203b-4169-845e-11d6cbe4baa6
+[2025-02-04 11:38:04,554: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:38:09,606: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:38:09,606: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:38:09,657: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:38:09,662: DEBUG/MainProcess] Current schedule:
+<ModelEntry: Process_URL_Everest yt_ftp.tasks.process_url(*[84], **{}) <freq: 10.00 seconds>>
+<ModelEntry: Process_URL_Lukla yt_ftp.tasks.process_url(*[82], **{}) <freq: 10.00 seconds>>
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:38:09,747: DEBUG/MainProcess] beat: Waking up in 4.75 seconds.
+[2025-02-04 11:38:14,554: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:14,555: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->da55628b-298d-4284-a899-ff2267d327da
+[2025-02-04 11:38:14,597: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:38:19,666: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:19,667: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->07285530-560b-447b-befc-083618e0b6cf
+[2025-02-04 11:38:19,707: DEBUG/MainProcess] beat: Waking up in 4.84 seconds.
+[2025-02-04 11:38:24,588: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:24,590: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->36526bb8-069d-4014-8f1a-9f2caa695d31
+[2025-02-04 11:38:24,632: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:38:29,676: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:29,677: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->d900700c-5853-497d-ba17-7c3f259f2fb3
+[2025-02-04 11:38:29,716: DEBUG/MainProcess] beat: Waking up in 4.86 seconds.
+[2025-02-04 11:38:34,767: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:34,769: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->a9501117-0321-4a50-b9f1-07af4a97fc2e
+[2025-02-04 11:38:34,810: DEBUG/MainProcess] beat: Waking up in 4.86 seconds.
+[2025-02-04 11:38:39,714: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:39,715: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->44251a54-5983-43e9-8582-2a900b5b29ea
+[2025-02-04 11:38:39,756: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:38:44,810: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:44,811: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->c240af1c-cc7d-4f09-a1ab-4fb3c0d114d9
+[2025-02-04 11:38:44,852: DEBUG/MainProcess] beat: Waking up in 4.85 seconds.
+[2025-02-04 11:38:49,762: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:49,764: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->048c0585-26e6-4561-9775-5c34f45c0f3a
+[2025-02-04 11:38:49,815: DEBUG/MainProcess] beat: Waking up in 4.99 seconds.
+[2025-02-04 11:38:54,856: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:54,858: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->174effbe-085d-467d-9758-0c05cad75774
+[2025-02-04 11:38:54,919: DEBUG/MainProcess] beat: Waking up in 4.83 seconds.
+[2025-02-04 11:38:59,811: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:38:59,816: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->8e2e9e5b-61c8-4ad3-8a7e-47f00bddda1f
+[2025-02-04 11:38:59,881: DEBUG/MainProcess] beat: Waking up in 4.96 seconds.
+[2025-02-04 11:39:04,892: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:04,893: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->5a32797c-fcf5-4929-9cd1-e9d82f97ba99
+[2025-02-04 11:39:04,934: DEBUG/MainProcess] beat: Waking up in 4.87 seconds.
+[2025-02-04 11:39:09,855: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:09,856: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->b2f0550b-741b-4c1f-a31f-488786f3a2eb
+[2025-02-04 11:39:09,897: DEBUG/MainProcess] beat: Waking up in 4.98 seconds.
+[2025-02-04 11:39:14,927: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:14,928: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->e9d39083-e82b-4341-9b8f-53b65d2ac985
+[2025-02-04 11:39:14,969: DEBUG/MainProcess] beat: Waking up in 4.88 seconds.
+[2025-02-04 11:39:19,899: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:19,901: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->3d732319-a352-4547-9bb6-756d991e80e9
+[2025-02-04 11:39:19,942: DEBUG/MainProcess] beat: Waking up in 4.97 seconds.
+[2025-02-04 11:39:24,997: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:24,999: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->7ca97aaf-5ace-4416-9bed-804a4aae1b0f
+[2025-02-04 11:39:25,054: DEBUG/MainProcess] beat: Waking up in 4.84 seconds.
+[2025-02-04 11:39:29,949: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:29,951: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->e502505c-ded5-445a-a7fb-427f61a14d17
+[2025-02-04 11:39:29,994: DEBUG/MainProcess] beat: Waking up in 4.99 seconds.
+[2025-02-04 11:39:35,044: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:35,045: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->20230b23-4ed7-466d-9fa3-8b3c4c42d64a
+[2025-02-04 11:39:35,090: DEBUG/MainProcess] beat: Waking up in 4.85 seconds.
+[2025-02-04 11:39:39,995: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:39,997: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->8a6f01df-3df0-4103-bce4-881a314da8d8
+[2025-02-04 11:39:40,041: DEBUG/MainProcess] beat: Waking up in 4.99 seconds.
+[2025-02-04 11:39:45,082: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:45,084: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->428b5dec-3375-4775-88d5-e6b66faace6e
+[2025-02-04 11:39:45,124: DEBUG/MainProcess] beat: Waking up in 4.86 seconds.
+[2025-02-04 11:39:50,042: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:50,044: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->07efab73-a23f-4942-a038-3fe2a01a4445
+[2025-02-04 11:39:50,087: DEBUG/MainProcess] beat: Waking up in 4.98 seconds.
+[2025-02-04 11:39:55,124: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:39:55,125: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->97e79871-fbe8-455b-8897-3e32aee200b6
+[2025-02-04 11:39:55,168: DEBUG/MainProcess] beat: Waking up in 4.86 seconds.
+[2025-02-04 11:40:00,082: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:40:00,084: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->dea29a31-dae0-47d8-b72d-6a0836271e85
+[2025-02-04 11:40:00,125: DEBUG/MainProcess] beat: Waking up in 4.99 seconds.
+[2025-02-04 11:40:05,160: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:40:05,162: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->2979ce57-d30b-42fc-9d9b-7f067878e2c8
+[2025-02-04 11:40:05,206: DEBUG/MainProcess] beat: Waking up in 4.87 seconds.
+[2025-02-04 11:40:10,124: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:40:10,125: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->3380a1fe-8ef0-402c-bd41-0460e1621d14
+[2025-02-04 11:40:10,172: DEBUG/MainProcess] beat: Waking up in 4.98 seconds.
+[2025-02-04 11:40:15,199: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:40:15,200: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->8cce7e73-02a6-4993-b9af-95b926c8d112
+[2025-02-04 11:40:15,242: DEBUG/MainProcess] beat: Waking up in 4.87 seconds.
+[2025-02-04 11:40:20,116: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:40:20,116: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:40:20,239: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:40:20,241: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->0f09e1d6-eedc-48dc-8a0f-6bb9bbd3439e
+[2025-02-04 11:40:20,287: DEBUG/MainProcess] beat: Waking up in 4.90 seconds.
+[2025-02-04 11:40:25,238: INFO/MainProcess] Scheduler: Sending due task Process_URL_Lukla (yt_ftp.tasks.process_url)
+[2025-02-04 11:40:25,239: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->b3f5e56b-8e6d-4a0c-a6f7-2bc902488892
+[2025-02-04 11:40:25,282: DEBUG/MainProcess] beat: Waking up in 4.95 seconds.
+[2025-02-04 11:40:30,283: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:40:30,285: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->215e73d2-49fa-417c-b6ae-b123534d4e98
+[2025-02-04 11:40:30,327: DEBUG/MainProcess] beat: Waking up in 4.90 seconds.
+[2025-02-04 11:40:35,281: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:40:35,281: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:40:35,330: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:40:35,334: DEBUG/MainProcess] Current schedule:
+<ModelEntry: Process_URL_Everest yt_ftp.tasks.process_url(*[84], **{}) <freq: 10.00 seconds>>
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:40:35,416: DEBUG/MainProcess] beat: Waking up in 4.86 seconds.
+[2025-02-04 11:40:40,333: INFO/MainProcess] Scheduler: Sending due task Process_URL_Everest (yt_ftp.tasks.process_url)
+[2025-02-04 11:40:40,334: DEBUG/MainProcess] yt_ftp.tasks.process_url sent. id->79c5577d-3027-42f8-b299-a5297e26dabb
+[2025-02-04 11:40:40,375: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:40:45,428: INFO/MainProcess] DatabaseScheduler: Schedule changed.
+[2025-02-04 11:40:45,429: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:40:45,478: DEBUG/MainProcess] DatabaseScheduler: Fetching database schedule
+[2025-02-04 11:40:45,481: DEBUG/MainProcess] Current schedule:
+<ModelEntry: celery.backend_cleanup celery.backend_cleanup(*[], **{}) <crontab: 0 4
+         * *
+          * (m/h/d/dM/MY), UTC>
+        >
+[2025-02-04 11:40:45,560: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:40:50,607: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:40:55,666: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:00,725: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:05,776: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:10,823: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:15,889: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:20,953: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:26,006: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:31,060: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:36,108: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:41,169: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:46,227: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:51,271: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:41:56,342: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:01,393: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:06,437: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:11,497: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:16,555: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:21,609: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:26,666: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:31,734: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:36,801: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:41,848: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:46,898: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:51,958: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:42:57,054: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:02,117: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:07,180: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:12,240: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:17,291: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:22,304: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:43:22,304: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:43:22,463: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:27,539: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:32,588: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:37,645: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:42,700: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:47,752: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:52,806: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:43:57,852: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:02,904: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:07,957: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:13,008: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:18,072: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:23,117: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:28,172: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:33,218: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:38,269: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:43,320: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:48,363: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:53,417: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:44:58,473: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:03,557: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:08,605: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:13,664: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:18,711: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:23,770: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:28,820: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:33,878: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:38,921: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:43,978: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:49,038: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:54,096: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:45:59,144: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:46:04,198: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:46:09,253: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:46:14,302: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:46:19,360: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:46:24,367: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2025-02-04 11:46:24,367: DEBUG/MainProcess] Writing entries...
+[2025-02-04 11:46:24,412: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.
+[2025-02-04 11:46:29,466: DEBUG/MainProcess] beat: Waking up in 5.00 seconds.

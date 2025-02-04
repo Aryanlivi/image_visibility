@@ -21,42 +21,76 @@ def start_celery_task(sender, instance, created, **kwargs):
         schedule_task(url_instance.id, interval) 
     elif not active:
         disable_task(url_instance)  # Disable task for inactive instance
-    elif not created:
+    elif not created:#this means the signal was update.
         update_or_schedule_task(url_instance, interval)
-
 def update_or_schedule_task(url_instance, interval):
-    """Update task interval or schedule a new one."""
-    task, created = CustomPeriodicTask.objects.get_or_create(
-        url_instance=url_instance, defaults={'task': 'yt_ftp.tasks.process_url'}
-    )
-
-    if created or task.interval != interval:
-        schedule_task(url_instance.id, interval)
-
-def schedule_task(instance_id, interval):
-    """Create or update the periodic task with the specified interval."""
-    url_instance = URL.objects.get(pk=instance_id)
-    task_name = f"Process_URL_{url_instance}"
-    # Try to get the existing task for the url_instance
+    """Update or create a periodic task for the given URL instance."""
     task = CustomPeriodicTask.objects.filter(url_instance=url_instance).first()
 
-    if not task:
-        # If task doesn't exist, create a new IntervalSchedule and PeriodicTask
-        schedule, _ = IntervalSchedule.objects.get_or_create(
-            every=interval, period=IntervalSchedule.SECONDS
-        )
-        task = CustomPeriodicTask.objects.create(
-            name=task_name,
-            task='yt_ftp.tasks.process_url',
-            interval=schedule,
-            args=json.dumps([instance_id]),
-            url_instance=url_instance
-        )
-    else:
-        task.interval.every = interval
-        task.args = json.dumps([instance_id])
-        task.interval.save()
+    if task:
+        # Update existing task
+        if task.interval.every != interval:
+            task.interval.every = interval
+            task.interval.save()
+        if not task.enabled and url_instance.active:
+            task.enabled = True  # Re-enable if inactive
+        task.args = json.dumps([url_instance.id])
         task.save()
+    else:
+        # Create a new scheduled task
+        schedule_task(url_instance.id, interval, enable=url_instance.active)
+
+
+def schedule_task(instance_id, interval, enable=True):
+    """Create a new periodic task with the specified interval."""
+    url_instance = URL.objects.get(pk=instance_id)
+    task_name = f"Process_URL_{url_instance}"
+
+    schedule, _ = IntervalSchedule.objects.get_or_create(
+        every=interval, period=IntervalSchedule.SECONDS
+    )
+
+    CustomPeriodicTask.objects.create(
+        name=task_name,
+        task='yt_ftp.tasks.process_url',
+        interval=schedule,
+        args=json.dumps([instance_id]),
+        url_instance=url_instance,
+        enabled=enable,  # Enable only if active
+    )
+# def update_or_schedule_task(url_instance, interval):
+#     """Update task interval or schedule a new one."""
+#     task, created = CustomPeriodicTask.objects.get_or_create(
+#         url_instance=url_instance, defaults={'task': 'yt_ftp.tasks.process_url'}
+#     )
+#     if created or task.interval != interval:
+#         schedule_task(url_instance.id, interval)
+
+
+# def schedule_task(instance_id, interval):
+#     """Create or update the periodic task with the specified interval."""
+#     url_instance = URL.objects.get(pk=instance_id)
+#     task_name = f"Process_URL_{url_instance}"
+#     # Try to get the existing task for the url_instance
+#     task = CustomPeriodicTask.objects.filter(url_instance=url_instance).first()
+
+#     if not task:
+#         # If task doesn't exist, create a new IntervalSchedule and PeriodicTask
+#         schedule, _ = IntervalSchedule.objects.get_or_create(
+#             every=interval, period=IntervalSchedule.SECONDS
+#         )
+#         task = CustomPeriodicTask.objects.create(
+#             name=task_name,
+#             task='yt_ftp.tasks.process_url',
+#             interval=schedule,
+#             args=json.dumps([instance_id]),
+#             url_instance=url_instance
+#         )
+#     else:
+#         task.interval.every = interval
+#         task.args = json.dumps([instance_id])
+#         task.interval.save()
+#         task.save()
 
 
 def disable_task(url_instance):
