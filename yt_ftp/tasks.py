@@ -23,7 +23,7 @@ def process_url(self,url_instance_id):
         img_handler = ImageHandler(img_path)
         maker_note = img_handler.create_encoded_maker_note(
             device_id=metadata.device_id,
-            devicecode=metadata.devicecode,
+            devicecode=metadata.devicecode,  
             album_code=metadata.album_code,
             latitude=metadata.latitude,
             longitude=metadata.longitude,

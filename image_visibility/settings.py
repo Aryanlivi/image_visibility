@@ -51,6 +51,13 @@ CELERY_WORKER_AUTOSCALE = (10, 4)  # Maximum 10, minimum 4 workers
 CELERY_BEAT_PERIODIC_TASK_MODEL = 'yt_ftp.models.CustomPeriodicTask'
 CELERY_BEAT_SCHEDULER = 'image_visibility.schedulers.CustomScheduler'
 
+
+#REST FRAMEWORK AND FILTERS:
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+}
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -69,6 +76,7 @@ MY_APPS=[
     "debug_toolbar",
     "rest_framework",
     "yt_ftp",
+    "django_filters",
 ]
 
 INSTALLED_APPS+=MY_APPS
