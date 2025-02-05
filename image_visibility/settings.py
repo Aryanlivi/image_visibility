@@ -81,7 +81,9 @@ MY_APPS=[
 
 INSTALLED_APPS+=MY_APPS
 
-MY_MIDDLEWARE=["debug_toolbar.middleware.DebugToolbarMiddleware",]
+MY_MIDDLEWARE=["debug_toolbar.middleware.DebugToolbarMiddleware",
+            "image_visibility.middleware.SecureHeadersMiddleware"
+            ]
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
@@ -179,3 +181,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "yt_ftp", "static")]
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+SECURE_SSL_REDIRECT = True  # Redirect HTTP requests to HTTPS
+SECURE_HSTS_SECONDS = 31536000  # Enable HTTP Strict Transport Security
+SECURE_HSTS_PRELOAD = True  # Optionally preload HSTS (ensure it's used for all subdomains)
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True  # Apply HSTS to all subdomains
