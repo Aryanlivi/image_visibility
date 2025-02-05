@@ -61,12 +61,12 @@ def add_debug_mode(cmd):
 # Define services and commands
 services = {}
 
-# # Add Redis server for Linux first
-# if platform.system() == "Linux":
-#     services["Redis Server"] = "redis-server --save \"\" --appendonly no"
+# Add Redis server for Linux first
+if platform.system() == "Linux":
+    services["Redis Server"] = "redis-server"
 
 services.update({
-    "Django server": "python manage.py runserver",
+    "Django server": "python manage.py runserver 0.0.0.0:8000",
     "Celery Beat": "celery -A image_visibility beat --scheduler image_visibility.schedulers.CustomScheduler --loglevel=INFO",
     "Celery Worker": "celery -A image_visibility worker --loglevel=info --pool=threads --concurrency=4"
     if platform.system() == "Windows"
