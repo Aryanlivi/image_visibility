@@ -10,9 +10,7 @@ class URL(models.Model):
     capture_interval = models.PositiveIntegerField(
         help_text="Enter the interval as total seconds"
     )
-    
-    
-    last_run = models.DateTimeField(null=True, blank=True)
+    last_run=models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -39,9 +37,10 @@ class ImageMetadata(models.Model):
 
 
 class CustomPeriodicTask(PeriodicTask):
+    #customperiodictask_set is the reverse relation created automatically.
     url_instance = models.ForeignKey(URL, on_delete=models.CASCADE, null=True, blank=True)
-    
+    # last_run_at=models.DateTimeField(null=True, blank=True)
     def __str__(self):
         return f"{self.name}"
-    class Meta:
+    class Meta: 
         verbose_name = "Custom Periodic Task"

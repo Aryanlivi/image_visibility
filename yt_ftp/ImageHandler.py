@@ -112,7 +112,7 @@ class ImageHandler:
             
             # Rename the file (overwrite the original file)
             os.rename(self.img_path, new_file_name)
-            logger.info(f"Metadata added and Image renamed to: {new_file_name}")
+            logger.debug(f"Metadata added and Image renamed to: {new_file_name}")
             return new_file_name
             
     def delete_file_locally(self,file_name):
@@ -123,11 +123,10 @@ class ImageHandler:
                 
             
     def upload_to_ftp(self,file_to_upload):
-        load_dotenv()
         ftp_server = config('ftp_server')
         ftp_username = config('ftp_username')
         ftp_password = config('ftp_password')
-        remote_directory = "/idaq/source-alpha-wscada"
+        remote_directory = config('remote_dir')
 
         try:
             # Connect to the FTP server
@@ -137,7 +136,7 @@ class ImageHandler:
 
             # Change to the target directory
             ftp.cwd(remote_directory)
-            logger.info(f"Changed to directory: {remote_directory}")
+            logger.debug(f"Changed to directory: {remote_directory}")
             # Extract the file name from the full path
             file_name = os.path.basename(file_to_upload)
             

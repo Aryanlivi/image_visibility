@@ -27,10 +27,10 @@ class YoutubeHandler:
             day_folder = get_current_datetime().strftime("%Y-%m-%d")
             day_folder_path = os.path.join(self.output_dir, day_folder)
             if not os.path.exists(day_folder_path):
-                logger.info("Creating folder...")
+                logger.debug("Creating folder...")
                 os.makedirs(day_folder_path)
             else:
-                logger.info(f"Folder {day_folder_path} already exists.")
+                logger.debug(f"Folder {day_folder_path} already exists.")
 
             # Generate a unique file name for the screenshot
             sanitized_datetime = get_current_datetime().strftime("%Y-%m-%d_%H-%M-%S")
@@ -46,10 +46,10 @@ class YoutubeHandler:
         """
         try:
             command = ["yt-dlp", "-g", "-f", "best", self.url]
-            # logger.info("Extracting video stream URL...")
+            logger.debug("Extracting video stream URL...")
             result = subprocess.run(command, capture_output=True, text=True, check=True)
             stream_url = result.stdout.strip()
-            # logger.info("Stream URL extracted successfully.")
+            logger.debug("Stream URL extracted successfully.")
             return stream_url
         except subprocess.CalledProcessError as e:
             logger.error(f"Error extracting video stream URL: {e}")
@@ -82,9 +82,9 @@ class YoutubeHandler:
         ]
 
         try:
-            # logger.info(f"Capturing screenshot at {capture_time}...")
+            logger.debug(f"Capturing screenshot at {capture_time}...")
             subprocess.run(command, check=True)
-            # logger.info(f"Screenshot saved to {saving_dir} at {capture_time}.")
+            logger.debug(f"Screenshot saved to {saving_dir} at {capture_time}.")
             return saving_dir, capture_time
         except subprocess.CalledProcessError as e:
             logger.error(f"Error capturing screenshot: {e}")

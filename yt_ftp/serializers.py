@@ -1,8 +1,9 @@
 from rest_framework import serializers
-from .models import URL, ImageMetadata
+from .models import URL, ImageMetadata,CustomPeriodicTask
 from django.db import transaction
 from django.db.models.signals import post_save
 from yt_ftp.signals.handlers import start_celery_task
+
 
 # Serializer for ImageMetadata model
 class ImageSerializer(serializers.ModelSerializer):
@@ -10,14 +11,21 @@ class ImageSerializer(serializers.ModelSerializer):
         model = ImageMetadata
         fields = ['id','device_id', 'devicecode', 'album_code', 'latitude', 'longitude', 'altitude', 'imageowner', 'angle']
 
-# Serializer for URL model
+# Serializer for URL model 
 class URLSerializer(serializers.ModelSerializer):
     # Nested ImageMetadata serializer
     image_metadata = ImageSerializer()
+    last_run_at=serializers.SerializerMethodField()
     class Meta:
         model = URL
-        fields = ['id','url','name','active','capture_interval', 'image_metadata']
+        fields = ['id','url','name','active','capture_interval', 'image_metadata','last_run_at']
     
+    def get_last_run_at(self, obj):
+        task = obj.customperiodictask_set.first()  # Get the first related task
+        if task:
+            return task.last_run_at
+        return None  # Or return a default value if no task exists
+
     def create(self, validated_data):
         url_instance=None
         # Temporarily disconnect the post_save signal for the URL model

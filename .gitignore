@@ -14,4 +14,7 @@ env/
 #Ignore Python object files
 *.pyo
 
+#Ignore log files
+*.log
+
 *.jpg

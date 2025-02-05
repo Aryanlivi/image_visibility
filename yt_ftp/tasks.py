@@ -1,8 +1,9 @@
 from celery import shared_task
-from .models import URL,ImageMetadata
+from .models import URL,ImageMetadata,CustomPeriodicTask
 import logging
 from .YoutubeHandler import YoutubeHandler
 from .ImageHandler import ImageHandler
+from django.utils.timezone import now
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -14,16 +15,20 @@ def process_url(self,url_instance_id):
     """
     try:
         url_instance = URL.objects.get(id=url_instance_id)
+        task = CustomPeriodicTask.objects.get(url_instance=url_instance)
+        if not task.enabled:
+            logger.warning(f"{task} Not enabled")
+            return
         metadata=ImageMetadata.objects.filter(url=url_instance).first()
-        logger.info(f"Processing URL: {url_instance}")
+        logger.debug(f"Processing URL: {url_instance}")
         BASE_OUTPUT_DIR = f"./screenshots/{url_instance.name}"
         yt_handler = YoutubeHandler(url_instance.url, BASE_OUTPUT_DIR)
         img_path, capture_time = yt_handler.capture_screenshot()
-
+        logger.debug(f"capture:{capture_time}")
         img_handler = ImageHandler(img_path)
         maker_note = img_handler.create_encoded_maker_note(
             device_id=metadata.device_id,
-            devicecode=metadata.devicecode,  
+            devicecode=metadata.devicecode,    
             album_code=metadata.album_code,
             latitude=metadata.latitude,
             longitude=metadata.longitude,
@@ -37,12 +42,18 @@ def process_url(self,url_instance_id):
             maker_note,
             firstangle=int(first_angle),  # Assuming these fields exist in ImageMetadata
             lastangle=int(last_angle),
-        )
+        ) 
 
-        # # Uncomment this to upload the file to FTP
-        # # img_handler.upload_to_ftp(file_to_upload=file_name)
+        # Uncomment this to upload the file to FTP
+        # img_handler.upload_to_ftp(file_to_upload=file_name)
 
-        logger.info(f"Successfully processed URL: {url_instance.url}")
+        logger.info(f"Successfully processed URL: {url_instance.name}")
+        # # Update last_run_at timestamp 
+        try:
+            task.last_run_at = now()
+            task.save()
+        except CustomPeriodicTask.DoesNotExist:
+            logger.warning(f"Task {self.name} not found in PeriodicTask table") 
     except Exception as e:
         logger.error(f"-------Error processing URL: {e}")
 
