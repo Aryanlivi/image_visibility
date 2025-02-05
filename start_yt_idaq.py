@@ -5,10 +5,24 @@ import time
 import sys
 from datetime import datetime
 import shutil  # For moving files
+import logging  # Import logging module
 
-# Create necessary directories
+# Set up logging configuration
+log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+log_file = 'logs/script.log'
+
+# Create logs directory if not exists
 os.makedirs("logs", exist_ok=True)
 os.makedirs("backup_logs", exist_ok=True)
+
+# Create a file handler and set the log level
+file_handler = logging.FileHandler(log_file)
+file_handler.setFormatter(log_formatter)
+
+# Create a logger and set the log level
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+logger.addHandler(file_handler)
 
 # Check if debug mode is enabled (via CLI arg or env variable)
 DEBUG_MODE = "--debug" in sys.argv or os.getenv("DEBUG") == "true"
@@ -24,12 +38,13 @@ def backup_log(file_path):
         for _ in range(retries):
             try:
                 shutil.move(file_path, backup_filename)  # Move file to backup_logs
+                logger.info(f"Successfully backed up log: {file_path} to {backup_filename}")
                 break  # Successfully moved, exit loop
             except PermissionError:
-                print(f"Permission error on {file_path}. Retrying...")
+                logger.warning(f"Permission error on {file_path}. Retrying...")
                 time.sleep(1)  # Wait before retrying
         else:
-            print(f"Failed to move {file_path} after {retries} attempts.")
+            logger.error(f"Failed to move {file_path} after {retries} attempts.")
 
 def start_process(command, log_file, debug_file=None):
     """Starts a process with separate normal and debug logs."""
@@ -43,8 +58,10 @@ def start_process(command, log_file, debug_file=None):
         if debug_file:
             with open(debug_file, "w") as debug_log:
                 process = subprocess.Popen(command, shell=True, stdout=log, stderr=debug_log)
+                logger.info(f"Started process with command: {command}")
         else:
             process = subprocess.Popen(command, shell=True, stdout=log, stderr=log)
+            logger.info(f"Started process with command: {command}")
         return process
 
 def add_debug_mode(cmd):
@@ -64,9 +81,6 @@ services = {}
 # Add Redis server for Linux first
 if platform.system() == "Linux":
     services["Redis Server"] = "redis-server"
-
-# # Get the number of CPU cores for concurrency and auto-scaling
-# cpu_cores = os.cpu_count()  # Get the number of cores available
 
 # Update service commands with concurrency and auto-scaling for Linux
 services.update({
@@ -88,14 +102,14 @@ processes = {
     ) for name, cmd in services.items()
 }
 
-print("All services started in " + ("DEBUG" if DEBUG_MODE else "NORMAL") + " mode!")
+logger.info("All services started in " + ("DEBUG" if DEBUG_MODE else "NORMAL") + " mode!")
 
 # Monitor processes
 try:
     while True:
         for name, process in processes.items():
             if process.poll() is not None:  # Process has stopped
-                print(f"{name} has stopped!")
+                logger.error(f"{name} has stopped!")
 
                 # Log service stop in the appropriate log file
                 with open(f"logs/{name.lower().replace(' ', '_')}.log", "a") as log:
@@ -106,12 +120,12 @@ try:
 
         time.sleep(5)  # Check every 5 seconds
 except KeyboardInterrupt:
-    print("Shutting down all services...")
-    
+    logger.info("Shutting down all services...")
+
     # Terminate all processes first
     for name, process in processes.items():
         process.terminate()
-        print(f"{name} terminated...")
+        logger.info(f"{name} terminated...")
 
     # Wait a bit to ensure logs are released
     time.sleep(2)
@@ -125,4 +139,4 @@ except KeyboardInterrupt:
         if DEBUG_MODE:
             backup_log(debug_file)
 
-    print("All services shut down and logs backed up.")
+    logger.info("All services shut down and logs backed up.")
