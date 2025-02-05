@@ -4,6 +4,7 @@ import logging
 from .YoutubeHandler import YoutubeHandler
 from .ImageHandler import ImageHandler
 from django.utils.timezone import now
+import sys
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

@@ -13,8 +13,6 @@ os.makedirs("backup_logs", exist_ok=True)
 # Check if debug mode is enabled (via CLI arg or env variable)
 DEBUG_MODE = "--debug" in sys.argv or os.getenv("DEBUG") == "true"
 
-
-
 def backup_log(file_path):
     """Move old log files to backup_logs folder with a timestamp."""
     if os.path.exists(file_path):
@@ -32,7 +30,6 @@ def backup_log(file_path):
                 time.sleep(1)  # Wait before retrying
         else:
             print(f"Failed to move {file_path} after {retries} attempts.")
-
 
 def start_process(command, log_file, debug_file=None):
     """Starts a process with separate normal and debug logs."""
@@ -62,14 +59,20 @@ def add_debug_mode(cmd):
     return cmd
 
 # Define services and commands
-services = {
+services = {}
+
+# Add Redis server for Linux first
+if platform.system() == "Linux":
+    services["Redis Server"] = "redis-server --save \"\" --appendonly no"
+
+services.update({
     "Django server": "python manage.py runserver",
     "Celery Beat": "celery -A image_visibility beat --scheduler image_visibility.schedulers.CustomScheduler --loglevel=INFO",
     "Celery Worker": "celery -A image_visibility worker --loglevel=info --pool=threads --concurrency=4"
     if platform.system() == "Windows"
     else "celery -A image_visibility worker --loglevel=info",
     "Celery Flower": "celery -A image_visibility flower",
-}
+})
 
 # Start all processes with normal and debug logs based on mode
 processes = {
