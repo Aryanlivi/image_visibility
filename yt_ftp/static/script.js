@@ -1,4 +1,4 @@
-const apiUrl = 'http://127.0.0.1:8000/yt_ftp/api/urls/';
+const apiUrl = window.location.origin + '/yt_ftp/api/urls/';
 const urlList = document.getElementById('url-list');
 const addUrlForm = document.getElementById('add-url-form');
 const editForm = document.getElementById('edit-url-form');
