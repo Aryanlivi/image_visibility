@@ -81,7 +81,8 @@ MY_APPS=[
 
 INSTALLED_APPS+=MY_APPS
 
-MY_MIDDLEWARE=["debug_toolbar.middleware.DebugToolbarMiddleware",]
+MY_MIDDLEWARE=["debug_toolbar.middleware.DebugToolbarMiddleware",
+            ]
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
@@ -179,3 +180,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "yt_ftp", "static")]
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
