@@ -65,12 +65,17 @@ services = {}
 if platform.system() == "Linux":
     services["Redis Server"] = "redis-server"
 
+# Get the number of CPU cores for concurrency and auto-scaling
+cpu_cores = os.cpu_count()  # Get the number of cores available
+
+# Update service commands with concurrency and auto-scaling for Linux
 services.update({
     "Django server": "python manage.py runserver 0.0.0.0:8000",
     "Celery Beat": "celery -A image_visibility beat --scheduler image_visibility.schedulers.CustomScheduler --loglevel=INFO",
-    "Celery Worker": "celery -A image_visibility worker --loglevel=info --pool=threads --concurrency=4"
-    if platform.system() == "Windows"
-    else "celery -A image_visibility worker --loglevel=info",
+    # Celery Worker with concurrency and auto-scaling based on the number of CPU cores
+    "Celery Worker": f"celery -A image_visibility worker --loglevel=info --concurrency={cpu_cores} --autoscale={cpu_cores*2},{cpu_cores}"
+    if platform.system() == "Linux"  # Apply only on Linux
+    else "celery -A image_visibility worker --loglevel=info",  # Default for Windows
     "Celery Flower": "celery -A image_visibility flower",
 })
 
