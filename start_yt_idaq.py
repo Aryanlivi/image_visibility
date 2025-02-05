@@ -61,9 +61,9 @@ def add_debug_mode(cmd):
 # Define services and commands
 services = {}
 
-# Add Redis server for Linux first
-if platform.system() == "Linux":
-    services["Redis Server"] = "redis-server --save \"\" --appendonly no"
+# # Add Redis server for Linux first
+# if platform.system() == "Linux":
+#     services["Redis Server"] = "redis-server --save \"\" --appendonly no"
 
 services.update({
     "Django server": "python manage.py runserver",
