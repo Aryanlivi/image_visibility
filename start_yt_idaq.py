@@ -3,21 +3,51 @@ import platform
 import subprocess
 import time
 import sys
+from datetime import datetime
+import shutil  # For moving files
 
-# Create logs directory if not exists
+# Create necessary directories
 os.makedirs("logs", exist_ok=True)
+os.makedirs("backup_logs", exist_ok=True)
 
 # Check if debug mode is enabled (via CLI arg or env variable)
 DEBUG_MODE = "--debug" in sys.argv or os.getenv("DEBUG") == "true"
 
+
+
+def backup_log(file_path):
+    """Move old log files to backup_logs folder with a timestamp."""
+    if os.path.exists(file_path):
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        backup_filename = f"backup_logs/{os.path.basename(file_path)}_{timestamp}.log"
+        
+        # Retry mechanism for moving the file
+        retries = 5
+        for _ in range(retries):
+            try:
+                shutil.move(file_path, backup_filename)  # Move file to backup_logs
+                break  # Successfully moved, exit loop
+            except PermissionError:
+                print(f"Permission error on {file_path}. Retrying...")
+                time.sleep(1)  # Wait before retrying
+        else:
+            print(f"Failed to move {file_path} after {retries} attempts.")
+
+
 def start_process(command, log_file, debug_file=None):
     """Starts a process with separate normal and debug logs."""
+    # Backup old logs before starting a new one
+    backup_log(log_file)
+    if debug_file:
+        backup_log(debug_file)
+
+    # Open new log files (overwrite mode)
     with open(log_file, "w") as log:
         if debug_file:
             with open(debug_file, "w") as debug_log:
                 process = subprocess.Popen(command, shell=True, stdout=log, stderr=debug_log)
         else:
-            process = subprocess.Popen(command, shell=True, stdout=log, stderr=log)  # No debug log for normal mode
+            process = subprocess.Popen(command, shell=True, stdout=log, stderr=log)
         return process
 
 def add_debug_mode(cmd):
@@ -35,7 +65,7 @@ def add_debug_mode(cmd):
 services = {
     "Django server": "python manage.py runserver",
     "Celery Beat": "celery -A image_visibility beat --scheduler image_visibility.schedulers.CustomScheduler --loglevel=INFO",
-    "Celery Worker": "celery -A image_visibility worker --pool=solo --loglevel=info"
+    "Celery Worker": "celery -A image_visibility worker --loglevel=info --pool=threads --concurrency=4"
     if platform.system() == "Windows"
     else "celery -A image_visibility worker --loglevel=info",
     "Celery Flower": "celery -A image_visibility flower",
@@ -58,7 +88,7 @@ try:
         for name, process in processes.items():
             if process.poll() is not None:  # Process has stopped
                 print(f"{name} has stopped!")
-                
+
                 # Log service stop in the appropriate log file
                 with open(f"logs/{name.lower().replace(' ', '_')}.log", "a") as log:
                     log.write(f"\n{name} has stopped!\n")
@@ -69,6 +99,22 @@ try:
         time.sleep(5)  # Check every 5 seconds
 except KeyboardInterrupt:
     print("Shutting down all services...")
+    
+    # Terminate all processes first
     for name, process in processes.items():
         process.terminate()
-        print(f"{name} terminated.")
+        print(f"{name} terminated...")
+
+    # Wait a bit to ensure logs are released
+    time.sleep(2)
+
+    # Backup logs after processes have been shut down
+    for name in services.keys():
+        log_file = f"logs/{name.lower().replace(' ', '_')}.log"
+        debug_file = f"logs/{name.lower().replace(' ', '_')}_debug.log"
+        
+        backup_log(log_file)
+        if DEBUG_MODE:
+            backup_log(debug_file)
+
+    print("All services shut down and logs backed up.")

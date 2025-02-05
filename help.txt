@@ -1,17 +1,13 @@
-celery -A image_visibility worker --pool=solo --loglevel=info                                      
-celery -A tasks beat --loglevel=info
-
-celery -A tasks worker --loglevel=info --concurrency=4
-
-celery -A image_visibility beat --scheduler django_celery_beat.schedulers:DatabaseScheduler --loglevel=info --logfile=celery_beat.log
-
-change redis.conf 
-
-
-
-export DJANGO_SETTINGS_MODULE="image_visibility.settings"
+# Start a Celery worker with autoscaling (min: 4, max: 10) and log level set to info
 celery -A yt_ftp.tasks worker --loglevel=info --autoscale=10,4
 
+# Redis configuration file location
+REDIS CONF:
 /etc/redis/redis.conf
 
+# Run Redis server
+# FOR TEST ONLY: Run Redis server without persistence and with protected mode disabled
+redis-server --save "" --appendonly no --protected-mode no &
 
+# FOR VM: Run Redis server without persistence
+redis-server --save "" --appendonly no
