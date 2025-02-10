@@ -2,6 +2,9 @@
 
 A scalable system for monitoring and forecasting visibility conditions in Nepal's airport surroundings by leveraging YouTube live streams. This solution eliminates the need for expensive sensors and cameras.
 
+**For Further Information refer the following Link:**
+[YouTube Streams to RTS-TSS DOCS](https://docs.google.com/document/d/1OUCnrAf92U85wPd4-4Y8pCZPkgxiCdugUYKSglWepN8/edit?tab=t.0)
+
 ![alt text](IDAQ_example.png)
 
 ![alt text](Celery_flower.png)
