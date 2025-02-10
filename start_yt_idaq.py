@@ -5,24 +5,6 @@ import time
 import sys
 from datetime import datetime
 import shutil  # For moving files
-import logging  # Import logging module
-
-# Set up logging configuration
-log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-log_file = 'logs/script.log'
-
-# Create logs directory if not exists
-os.makedirs("logs", exist_ok=True)
-os.makedirs("backup_logs", exist_ok=True)
-
-# Create a file handler and set the log level
-file_handler = logging.FileHandler(log_file)
-file_handler.setFormatter(log_formatter)
-
-# Create a logger and set the log level
-logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
-logger.addHandler(file_handler)
 
 # Check if debug mode is enabled (via CLI arg or env variable)
 DEBUG_MODE = "--debug" in sys.argv or os.getenv("DEBUG") == "true"
@@ -32,19 +14,19 @@ def backup_log(file_path):
     if os.path.exists(file_path):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         backup_filename = f"backup_logs/{os.path.basename(file_path)}_{timestamp}.log"
-        
+
         # Retry mechanism for moving the file
         retries = 5
         for _ in range(retries):
             try:
                 shutil.move(file_path, backup_filename)  # Move file to backup_logs
-                logger.info(f"Successfully backed up log: {file_path} to {backup_filename}")
+                print(f"Successfully backed up log: {file_path} to {backup_filename}")
                 break  # Successfully moved, exit loop
             except PermissionError:
-                logger.warning(f"Permission error on {file_path}. Retrying...")
+                print(f"Permission error on {file_path}. Retrying...")
                 time.sleep(1)  # Wait before retrying
         else:
-            logger.error(f"Failed to move {file_path} after {retries} attempts.")
+            print(f"Failed to move {file_path} after {retries} attempts.")
 
 def start_process(command, log_file, debug_file=None):
     """Starts a process with separate normal and debug logs."""
@@ -58,10 +40,10 @@ def start_process(command, log_file, debug_file=None):
         if debug_file:
             with open(debug_file, "w") as debug_log:
                 process = subprocess.Popen(command, shell=True, stdout=log, stderr=debug_log)
-                logger.info(f"Started process with command: {command}")
+                print(f"Started process with command: {command}")
         else:
             process = subprocess.Popen(command, shell=True, stdout=log, stderr=log)
-            logger.info(f"Started process with command: {command}")
+            print(f"Started process with command: {command}")
         return process
 
 def add_debug_mode(cmd):
@@ -86,7 +68,6 @@ if platform.system() == "Linux":
 services.update({
     "Django server": "python manage.py runserver 0.0.0.0:8000",
     "Celery Beat": "celery -A image_visibility beat --scheduler image_visibility.schedulers.CustomScheduler --loglevel=INFO",
-    # Celery Worker with concurrency and auto-scaling based on the number of CPU cores
     "Celery Worker": f"celery -A image_visibility worker --pool=prefork --loglevel=info"
     if platform.system() == "Linux"  # Apply only on Linux
     else "celery -A image_visibility worker --pool=solo --loglevel=info",  # Default for Windows
@@ -102,14 +83,14 @@ processes = {
     ) for name, cmd in services.items()
 }
 
-logger.info("All services started in " + ("DEBUG" if DEBUG_MODE else "NORMAL") + " mode!")
+print("All services started in " + ("DEBUG" if DEBUG_MODE else "NORMAL") + " mode!")
 
 # Monitor processes
 try:
     while True:
         for name, process in processes.items():
             if process.poll() is not None:  # Process has stopped
-                logger.error(f"{name} has stopped!")
+                print(f"{name} has stopped!")
 
                 # Log service stop in the appropriate log file
                 with open(f"logs/{name.lower().replace(' ', '_')}.log", "a") as log:
@@ -117,15 +98,14 @@ try:
                 if DEBUG_MODE:
                     with open(f"logs/{name.lower().replace(' ', '_')}_debug.log", "a") as debug_log:
                         debug_log.write(f"\n{name} has stopped!\n")
-
         time.sleep(5)  # Check every 5 seconds
 except KeyboardInterrupt:
-    logger.info("Shutting down all services...")
+    print("Shutting down all services...")
 
     # Terminate all processes first
     for name, process in processes.items():
         process.terminate()
-        logger.info(f"{name} terminated...")
+        print(f"{name} terminated...")
 
     # Wait a bit to ensure logs are released
     time.sleep(2)
@@ -134,9 +114,9 @@ except KeyboardInterrupt:
     for name in services.keys():
         log_file = f"logs/{name.lower().replace(' ', '_')}.log"
         debug_file = f"logs/{name.lower().replace(' ', '_')}_debug.log"
-        
+
         backup_log(log_file)
         if DEBUG_MODE:
             backup_log(debug_file)
 
-    logger.info("All services shut down and logs backed up.")
+    print("All services shut down and logs backed up.")
