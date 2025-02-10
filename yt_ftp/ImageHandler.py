@@ -123,11 +123,11 @@ class ImageHandler:
                 
             
     def upload_to_ftp(self,file_to_upload):
-        ftp_server = config('ftp_server')
-        ftp_username = config('ftp_username')
-        ftp_password = config('ftp_password')
-        remote_directory = config('remote_dir')
-
+        ftp_server = config('ftp2_server')
+        ftp_username = config('ftp2_username')
+        ftp_password = config('ftp2_password')
+        remote_directory = config('ftp2_remote_dir')
+        logger.info(f"Uploading file to FTP server: {ftp_server}")
         try:
             # Connect to the FTP server
             ftp = FTP(ftp_server)

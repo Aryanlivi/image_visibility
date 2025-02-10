@@ -63,6 +63,8 @@ services = {}
 # Add Redis server for Linux first
 if platform.system() == "Linux":
     services["Redis Server"] = "redis-server"
+if platform.system() == "Windows":
+    print("Please start Redis server manually on Windows.")
 
 # Update service commands with concurrency and auto-scaling for Linux
 services.update({
