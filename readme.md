@@ -4,6 +4,10 @@ A scalable system for monitoring and forecasting visibility conditions in Nepal'
 
 ![alt text](IDAQ_example.png)
 
+![alt text](Celery_flower.png)
+
+![alt text](IDAQ_URL.png)
+
 ## Features
 
 - **Real-time Image Capture**: Extracts images from YouTube streams at customizable intervals.
