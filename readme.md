@@ -2,6 +2,8 @@
 
 A scalable system for monitoring and forecasting visibility conditions in Nepal's airport surroundings by leveraging YouTube live streams. This solution eliminates the need for expensive sensors and cameras.
 
+![alt text](IDAQ_example.png)
+
 ## Features
 
 - **Real-time Image Capture**: Extracts images from YouTube streams at customizable intervals.
