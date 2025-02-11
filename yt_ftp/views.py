@@ -20,8 +20,8 @@ class URLViewSet(ModelViewSet):
     
 
 class FTPConfigViewSet(ModelViewSet):
-    http_method_names = ['get','head','options']
+    http_method_names = ['get','head','post','patch','delete','options']
     queryset=FTPConfig.objects.all()
     serializer_class=FTPConfigSerializer
     filter_backends = [DjangoFilterBackend]
-    filterset_class = FTPConfigFilter  
+    filterset_class = FTPConfigFilter    

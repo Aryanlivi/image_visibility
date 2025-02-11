@@ -10,16 +10,42 @@ class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ImageMetadata
         fields = ['id','device_id', 'devicecode', 'album_code', 'latitude', 'longitude', 'altitude', 'imageowner', 'angle']
-class FTPConfigSerializer(serializers.ModelSerializer):
+class SimpleFTPConfigSerializer(serializers.ModelSerializer):
     class Meta:
         model = FTPConfig
         fields = ['id','ftp_server','remote_directory']
         
-# Serializer for URL model 
+class FTPConfigSerializer(serializers.ModelSerializer):
+    ftp_password = serializers.CharField(write_only=True, required=True)
+
+    class Meta:
+        model = FTPConfig
+        fields = ['id', 'ftp_server', 'ftp_username', 'ftp_password', 'remote_directory', 'created_at', 'updated_at']
+        read_only_fields = ['id', 'created_at', 'updated_at']
+
+    def create(self, validated_data):
+        ftp_password = validated_data.pop('ftp_password')
+        ftp_config = FTPConfig(**validated_data)
+        ftp_config.set_password(ftp_password)
+        ftp_config.save()
+        return ftp_config
+
+    def update(self, instance, validated_data):
+        if 'ftp_password' in validated_data:
+            ftp_password = validated_data.pop('ftp_password')
+            instance.set_password(ftp_password)
+        
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        
+        instance.save()
+        return instance
+
+# Serializer for URL model   
 class URLSerializer(serializers.ModelSerializer):
     # Nested ImageMetadata serializer
     image_metadata = ImageSerializer()
-    ftp_configs=FTPConfigSerializer(many=True)
+    ftp_configs=SimpleFTPConfigSerializer(many=True)
     last_run_at=serializers.SerializerMethodField()
     class Meta:
         model = URL
