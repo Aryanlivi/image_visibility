@@ -120,8 +120,6 @@ class ImageHandler:
             os.remove(file_name)  # Delete the local file
             # logger.info(f"Deleted local file: {file_name}")
 
-                
-            
     def upload_to_ftp(self,file_to_upload):
         ftp_server = config('ftp2_server')
         ftp_username = config('ftp2_username')

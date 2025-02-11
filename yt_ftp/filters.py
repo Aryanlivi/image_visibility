@@ -1,5 +1,5 @@
 from django_filters.rest_framework import FilterSet,CharFilter
-from .models import URL
+from .models import URL,FTPConfig
 from django.db import models
 
 
@@ -9,3 +9,12 @@ class URLFilter(FilterSet):
         fields={
         "name": ["icontains"],
     }
+        
+
+class FTPConfigFilter(FilterSet):
+    class Meta:
+        model = FTPConfig
+        fields={
+        "ftp_server": ["icontains"],
+    }
+        

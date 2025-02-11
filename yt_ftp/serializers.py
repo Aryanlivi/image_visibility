@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import URL, ImageMetadata,CustomPeriodicTask
+from .models import URL, ImageMetadata,CustomPeriodicTask,FTPConfig
 from django.db import transaction
 from django.db.models.signals import post_save
 from yt_ftp.signals.handlers import start_celery_task
@@ -10,15 +10,20 @@ class ImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ImageMetadata
         fields = ['id','device_id', 'devicecode', 'album_code', 'latitude', 'longitude', 'altitude', 'imageowner', 'angle']
-
+class FTPConfigSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FTPConfig
+        fields = ['id','ftp_server','remote_directory']
+        
 # Serializer for URL model 
 class URLSerializer(serializers.ModelSerializer):
     # Nested ImageMetadata serializer
     image_metadata = ImageSerializer()
+    ftp_configs=FTPConfigSerializer(many=True)
     last_run_at=serializers.SerializerMethodField()
     class Meta:
         model = URL
-        fields = ['id','url','name','active','capture_interval', 'image_metadata','last_run_at']
+        fields = ['id','url','name','active','capture_interval', 'image_metadata','last_run_at','ftp_configs']
     
     def get_last_run_at(self, obj):
         task = obj.customperiodictask_set.first()  # Get the first related task

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_celery_beat.admin import PeriodicTaskAdmin
-from .models import URL, ImageMetadata,CustomPeriodicTask
+from .models import URL, ImageMetadata,CustomPeriodicTask,FTPConfig
 
 
 from django_celery_beat.models import PeriodicTask
@@ -21,3 +21,8 @@ class URLAdmin(admin.ModelAdmin):
     list_display = ('url', 'name', 'active', 'capture_interval', 'last_run', 'created_at', 'updated_at')
     search_fields = ('url', 'name')
 
+@admin.register(FTPConfig)
+class FTPConfig(admin.ModelAdmin):
+    list_display = ('ftp_username', 'ftp_password_encrypted', 'remote_directory')
+    search_fields = ('ftp_username', 'remote_directory')
+    
