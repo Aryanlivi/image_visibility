@@ -14,12 +14,11 @@ class SimpleFTPConfigSerializer(serializers.ModelSerializer):
     class Meta:
         model = FTPConfig
         fields = ['id','ftp_server','remote_directory']
-        
 class FTPConfigSerializer(serializers.ModelSerializer):
     ftp_password = serializers.CharField(write_only=True, required=True)
 
     class Meta:
-        model = FTPConfig
+        model = FTPConfig 
         fields = ['id', 'ftp_server', 'ftp_username', 'ftp_password', 'remote_directory', 'created_at', 'updated_at']
         read_only_fields = ['id', 'created_at', 'updated_at']
 
@@ -56,27 +55,41 @@ class URLSerializer(serializers.ModelSerializer):
         if task:
             return task.last_run_at
         return None  # Or return a default value if no task exists
-
+    
     def create(self, validated_data):
-        url_instance=None
         # Temporarily disconnect the post_save signal for the URL model
         post_save.disconnect(start_celery_task, sender=URL)
+        
+        url_instance = None
+        try:
+            with transaction.atomic():
+                # Extract image_metadata from validated_data
+                image_metadata_data = validated_data.pop('image_metadata')
+                ftp_configs_data = validated_data.pop('ftp_configs')
+                
+                # Create URL instance first
+                url_instance = URL.objects.create(**validated_data)
+                
+                # Now, associate ftp_configs with the created URL instance
+                for ftp_config_data in ftp_configs_data: 
+                    ftp_config = FTPConfig.objects.get(ftp_server=ftp_config_data['ftp_server'], remote_directory=ftp_config_data['remote_directory'])
+                    ftp_config.urls.add(url_instance)  # Add URL to many-to-many relationship
+                    ftp_config.save()
 
-        with transaction.atomic():
-            # Extract image_metadata from validated_data
-            image_metadata_data = validated_data.pop('image_metadata')
-            
-            # Create URL instance
-            url_instance = URL.objects.create(**validated_data)
+                # Reconnect the post_save signal for the URL model before saving image_metadata
+                post_save.connect(start_celery_task, sender=URL)
 
-            # Reconnect the post_save signal for the URL model before saving image_metadata
-            post_save.connect(start_celery_task, sender=URL)
+                # Create ImageMetadata instance related to the URL
+                image_metadata_instance = ImageMetadata.objects.create(
+                    url=url_instance,
+                    **image_metadata_data
+                )
 
-            # Create ImageMetadata instance related to the URL
-            image_metadata_instance = ImageMetadata.objects.create(
-                url=url_instance,
-                **image_metadata_data
-            )
+        except Exception as e:
+            # Handle any exceptions here (e.g., rollback transaction if needed)
+            if url_instance:
+                url_instance.delete()  # Rollback the created URL if there is any error
+            raise e
 
         return url_instance
     
