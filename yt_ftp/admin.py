@@ -15,9 +15,13 @@ class ImageMetadataInline(admin.StackedInline):
     readonly_fields = []  
     extra = 1  # Since it's OneToOne, no extra forms are needed
 
+class FTPConfigsInline(admin.StackedInline):  
+    model = FTPConfig.urls.through  # This is the intermediary model for the ManyToMany relation
+    readonly_fields = []  
+    extra = 1  # Since it's OneToOne, no extra forms are needed
 @admin.register(URL)
 class URLAdmin(admin.ModelAdmin):
-    inlines = [ImageMetadataInline]  
+    inlines = [ImageMetadataInline,FTPConfigsInline]  
     list_display = ('url', 'name', 'active', 'capture_interval', 'last_run', 'created_at', 'updated_at')
     search_fields = ('url', 'name')
 
