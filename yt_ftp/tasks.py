@@ -49,10 +49,9 @@ def process_url(self,url_instance_id,ftp_configs=None):
             firstangle=int(first_angle),  # Assuming these fields exist in ImageMetadata
             lastangle=int(last_angle),
         ) 
-        
-        img_handler.test_upload_to_ftp(file_to_upload=file_name,ftp_configs=ftp_configs)
         # Uncomment this to upload the file to FTP
-        # img_handler.upload_to_ftp(file_to_upload=file_name)
+        img_handler.upload_to_ftp(file_to_upload=file_name,ftp_configs=ftp_configs)
+
 
         logger.info(f"Successfully processed URL: {url_instance.name}")
         # # Update last_run_at timestamp 
