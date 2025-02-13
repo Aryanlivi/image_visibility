@@ -11,3 +11,6 @@ redis-server --save "" --appendonly no --protected-mode no &
 
 # FOR VM: Run Redis server without persistence
 redis-server --save "" --appendonly no
+
+## ADD workers:
+celery -A image_visibility worker --pool=prefork --loglevel=info --hostname={worker_name}@%h
