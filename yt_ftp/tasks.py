@@ -10,12 +10,17 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 @shared_task(bind=True)
-def process_url(self,url_instance_id):
+def process_url(self,url_instance_id,ftp_configs=None):
     """        
     Celery task to process  URL and take screenshots.
     """
     try:
         url_instance = URL.objects.get(id=url_instance_id)
+        
+        # Get FTP configurations for the URL that doesnt trigger signal and is already active
+        if ftp_configs is None:
+            ftp_configs=URL.objects.get_ftp_configs_for_url(url_instance)
+            
         task = CustomPeriodicTask.objects.get(url_instance=url_instance)
         if not task.enabled:
             logger.warning(f"{task} Not enabled")
@@ -44,7 +49,8 @@ def process_url(self,url_instance_id):
             firstangle=int(first_angle),  # Assuming these fields exist in ImageMetadata
             lastangle=int(last_angle),
         ) 
-
+        
+        img_handler.test_upload_ftp(ftp_configs)
         # Uncomment this to upload the file to FTP
         # img_handler.upload_to_ftp(file_to_upload=file_name)
 

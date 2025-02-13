@@ -15,15 +15,17 @@ def start_celery_task(sender, instance, created, **kwargs):
     url_instance = instance.url if sender == ImageMetadata else instance
     active = url_instance.active
     interval = url_instance.capture_interval
-
+    ftp_configs=URL.objects.get_ftp_configs_for_url(url_instance)
     if created and active:
-        process_url.delay(url_instance.id)  # Run task immediately for active instances
-        schedule_task(url_instance.id, interval) 
+        process_url.delay(url_instance.id,ftp_configs)  # Run task immediately for active instances
+        schedule_task(url_instance.id, interval,ftp_configs) 
     elif not active:
         disable_task(url_instance)  #Disable task for inactive instance
     elif not created:#this means the signal was update.
-        update_or_schedule_task(url_instance, interval)
-def update_or_schedule_task(url_instance, interval):
+        update_or_schedule_task(url_instance, interval,ftp_configs)
+        
+        
+def update_or_schedule_task(url_instance, interval,ftp_configs):
     """Update or create a periodic task for the given URL instance."""
     task = CustomPeriodicTask.objects.filter(url_instance=url_instance).first()
 
@@ -35,15 +37,15 @@ def update_or_schedule_task(url_instance, interval):
         if not task.enabled and url_instance.active:
             task.enabled = True  # Re-enable if inactive
             task.save(update_fields=['enabled'])
-            process_url.delay(url_instance.id)
+            process_url.delay(url_instance.id,ftp_configs)
         task.args = json.dumps([url_instance.id])
         task.save()
     else:
         # Create a new scheduled task
-        schedule_task(url_instance.id, interval, enable=url_instance.active)
+        schedule_task(url_instance.id, interval, ftp_configs,enable=url_instance.active)
 
 
-def schedule_task(instance_id, interval, enable=True):
+def schedule_task(instance_id, interval, ftp_configs,enable=True):
     """Create a new periodic task with the specified interval."""
     url_instance = URL.objects.get(pk=instance_id)
     task_name = f"Process_URL_{url_instance}"
@@ -61,7 +63,7 @@ def schedule_task(instance_id, interval, enable=True):
         name=task_name,
         task='yt_ftp.tasks.process_url',
         interval=schedule,
-        args=json.dumps([instance_id]),
+        args=json.dumps([instance_id,ftp_configs]),
         url_instance=url_instance,
         enabled=enable,  # Enable only if active
         last_run_at=last_run

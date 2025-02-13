@@ -120,6 +120,13 @@ class ImageHandler:
             os.remove(file_name)  # Delete the local file
             # logger.info(f"Deleted local file: {file_name}")
 
+    def test(self):
+        logger.info("Test method called")
+    def test_upload_ftp(self,ftp_configs):
+        
+        logger.info("------------------------------------")
+        logger.info(f"FRP IN TEST:{ftp_configs}")
+
     def upload_to_ftp(self,file_to_upload):
         ftp_server = config('ftp2_server')
         ftp_username = config('ftp2_username')

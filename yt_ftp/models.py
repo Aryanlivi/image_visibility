@@ -3,7 +3,17 @@ from django_celery_beat.models import PeriodicTask
 from cryptography.fernet import Fernet
 import base64
 from django.conf import settings
-
+class URLManager(models.Manager):
+    def get_ftp_configs_for_url(self, url_instance):
+        return [
+            {
+                "server": ftp_config.ftp_server,
+                "username": ftp_config.ftp_username,
+                "password": ftp_config.get_password(),
+                "remote_dir": ftp_config.remote_directory,
+            }
+            for ftp_config in url_instance.ftp_configs.all()
+        ]
 class URL(models.Model):
     url = models.URLField(unique=True)
     name = models.CharField(max_length=50,db_index=True)  
@@ -16,6 +26,7 @@ class URL(models.Model):
     last_run=models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    objects = URLManager()
 
     def __str__(self):
         return self.name
@@ -75,7 +86,15 @@ class FTPConfig(models.Model):
     def get_password(self):
         """Decrypt and return password"""
         cipher = get_cipher()
-        return cipher.decrypt(self.ftp_password_encrypted).decode()
+        encrypted_password = self.ftp_password_encrypted
+
+        # Convert memoryview to bytes if it's in that format
+        if isinstance(encrypted_password, memoryview):
+            encrypted_password = encrypted_password.tobytes()
+
+        decrypted_password = cipher.decrypt(encrypted_password).decode()
+        return decrypted_password
+
 
     def __str__(self):
         return f"{self.ftp_server} ({self.remote_directory})"
