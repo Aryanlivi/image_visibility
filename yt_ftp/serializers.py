@@ -44,7 +44,7 @@ class FTPConfigSerializer(serializers.ModelSerializer):
 class URLSerializer(serializers.ModelSerializer):
     # Nested ImageMetadata serializer
     image_metadata = ImageSerializer()
-    ftp_configs=SimpleFTPConfigSerializer(many=True)
+    ftp_configs = serializers.ListField(write_only=True) # accept only list of ftp_configs ids
     last_run_at=serializers.SerializerMethodField()
     class Meta:
         model = URL
@@ -56,6 +56,11 @@ class URLSerializer(serializers.ModelSerializer):
             return task.last_run_at
         return None  # Or return a default value if no task exists
     
+    def to_representation(self, instance):
+        """Modify the representation to return full FTPConfig details."""
+        representation = super().to_representation(instance)
+        representation['ftp_configs'] = SimpleFTPConfigSerializer(instance.ftp_configs.all(), many=True).data
+        return representation
     def create(self, validated_data):
         # Temporarily disconnect the post_save signal for the URL model
         post_save.disconnect(start_celery_task, sender=URL)
@@ -65,16 +70,14 @@ class URLSerializer(serializers.ModelSerializer):
             with transaction.atomic():
                 # Extract image_metadata from validated_data
                 image_metadata_data = validated_data.pop('image_metadata')
-                ftp_configs_data = validated_data.pop('ftp_configs')
+                ftp_ids = validated_data.pop('ftp_configs')  # This is a list of integers
                 
                 # Create URL instance first
                 url_instance = URL.objects.create(**validated_data)
                 
-                # Now, associate ftp_configs with the created URL instance
-                for ftp_config_data in ftp_configs_data: 
-                    ftp_config = FTPConfig.objects.get(ftp_server=ftp_config_data['ftp_server'], remote_directory=ftp_config_data['remote_directory'])
-                    ftp_config.urls.add(url_instance)  # Add URL to many-to-many relationship
-                    ftp_config.save()
+                # Fetch and associate FTPConfigs using IDs
+                ftp_configs = FTPConfig.objects.filter(id__in=ftp_ids)  # Fetch by IDs
+                url_instance.ftp_configs.set(ftp_configs)  # Assign many-to-many
 
                 # Reconnect the post_save signal for the URL model before saving image_metadata
                 post_save.connect(start_celery_task, sender=URL)
