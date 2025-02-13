@@ -11,6 +11,10 @@ DEBUG_MODE = "--debug" in sys.argv or os.getenv("DEBUG") == "true"
 
 def backup_log(file_path):
     """Move old log files to backup_logs folder with a timestamp."""
+    # Ensure backup_logs directory exists
+    backup_dir = "backup_logs"
+    if not os.path.exists(backup_dir):
+        os.makedirs(backup_dir)  # Create the directory if it doesn't exist
     if os.path.exists(file_path):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         backup_filename = f"backup_logs/{os.path.basename(file_path)}_{timestamp}.log"
