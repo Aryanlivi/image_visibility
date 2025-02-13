@@ -50,7 +50,7 @@ def process_url(self,url_instance_id,ftp_configs=None):
             lastangle=int(last_angle),
         ) 
         
-        img_handler.test_upload_ftp(ftp_configs)
+        img_handler.test_upload_to_ftp(file_to_upload=file_name,ftp_configs=ftp_configs)
         # Uncomment this to upload the file to FTP
         # img_handler.upload_to_ftp(file_to_upload=file_name)
 

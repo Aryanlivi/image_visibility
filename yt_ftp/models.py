@@ -7,10 +7,10 @@ class URLManager(models.Manager):
     def get_ftp_configs_for_url(self, url_instance):
         return [
             {
-                "server": ftp_config.ftp_server,
-                "username": ftp_config.ftp_username,
-                "password": ftp_config.get_password(),
-                "remote_dir": ftp_config.remote_directory,
+                "ftp_server": ftp_config.ftp_server,
+                "ftp_username": ftp_config.ftp_username,
+                "ftp_password": ftp_config.get_password(),
+                "remote_directory": ftp_config.remote_directory,
             }
             for ftp_config in url_instance.ftp_configs.all()
         ]
@@ -77,7 +77,13 @@ class FTPConfig(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=['ftp_server', 'ftp_username', 'remote_directory'],
+                name='unique_ftp_per_remote_dir'
+            )
+        ]
     def set_password(self, raw_password):
         """Encrypt and store password"""
         cipher = get_cipher()

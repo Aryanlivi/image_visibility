@@ -115,6 +115,7 @@ except KeyboardInterrupt:
     # Backup logs after processes have been shut down
     for name in services.keys():
         log_file = f"logs/{name.lower().replace(' ', '_')}.log"
+        print(name)
         debug_file = f"logs/{name.lower().replace(' ', '_')}_debug.log"
 
         backup_log(log_file)

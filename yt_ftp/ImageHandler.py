@@ -4,6 +4,8 @@ from PIL import Image
 import json
 from datetime import datetime
 import os
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from decouple import config
 import logging
 from ftplib import FTP
@@ -115,45 +117,83 @@ class ImageHandler:
             logger.debug(f"Metadata added and Image renamed to: {new_file_name}")
             return new_file_name
             
-    def delete_file_locally(self,file_name):
-        if os.path.exists(file_name):
-            os.remove(file_name)  # Delete the local file
-            # logger.info(f"Deleted local file: {file_name}")
 
-    def test(self):
-        logger.info("Test method called")
-    def test_upload_ftp(self,ftp_configs):
+    def test_upload_to_ftp(self, file_to_upload,ftp_configs):
+        def upload_single_ftp(ftp_config):
+            ftp_server = ftp_config['ftp_server']
+            ftp_username = ftp_config['ftp_username']
+            ftp_password = ftp_config['ftp_password']
+            remote_directory = ftp_config['remote_directory']
+            
+            logger.info(f"Uploading file to FTP server: {ftp_server}")
+            try:
+                ftp = FTP(ftp_server)
+                ftp.login(user=ftp_username, passwd=ftp_password)
+                logger.info(f"Connected to FTP server: {ftp_server}")
+                
+                # Change to the target directory
+                ftp.cwd(remote_directory)
+                logger.debug(f"Changed to directory: {remote_directory}")
+                
+                # Extract the file name from the full path
+                file_name = os.path.basename(file_to_upload)
+                
+                # Upload the file
+                with open(file_to_upload, "rb") as file:
+                    ftp.storbinary(f"STOR {file_name}", file)
+                    logger.info(f"Uploaded file: {file_name} to {ftp_server}")
+                
+                # Close the connection
+                ftp.quit()
+                logger.info(f"FTP connection closed for {ftp_server}.")
+                return True
+            except Exception as e:
+                logger.error(f"Error uploading to {ftp_server}: {e}")
+                return False
         
-        logger.info("------------------------------------")
-        logger.info(f"FRP IN TEST:{ftp_configs}")
+        # Using ThreadPoolExecutor to upload to multiple FTP servers concurrently
+        with ThreadPoolExecutor(max_workers=min(len(ftp_configs), 6)) as executor:
+            results = list(executor.map(upload_single_ftp,ftp_configs))
+        
+        # If all uploads were successful, delete the local file
+        if all(results):
+            self.delete_file_locally(file_to_upload)
 
-    def upload_to_ftp(self,file_to_upload):
-        ftp_server = config('ftp2_server')
-        ftp_username = config('ftp2_username')
-        ftp_password = config('ftp2_password')
-        remote_directory = config('ftp2_remote_dir')
-        logger.info(f"Uploading file to FTP server: {ftp_server}")
+    def delete_file_locally(self, file_name):
         try:
-            # Connect to the FTP server
-            ftp = FTP(ftp_server)
-            ftp.login(user=ftp_username, passwd=ftp_password)
-            logger.info(f"Connected to FTP server: {ftp_server}")
+            if os.path.exists(file_name):
+                os.remove(file_name)
+                logger.info(f"Deleted local file: {file_name}")
+        except Exception as e:
+            logger.error(f"Error deleting file {file_name}: {e}")
 
-            # Change to the target directory
-            ftp.cwd(remote_directory)
-            logger.debug(f"Changed to directory: {remote_directory}")
-            # Extract the file name from the full path
-            file_name = os.path.basename(file_to_upload)
+    # def upload_to_ftp(self,file_to_upload):
+    #     ftp_server = config('ftp2_server')
+    #     ftp_username = config('ftp2_username')
+    #     ftp_password = config('ftp2_password')
+    #     remote_directory = config('ftp2_remote_dir')
+    #     logger.info(f"Uploading file to FTP server: {ftp_server}")
+    #     try:
+    #         # Connect to the FTP server
+    #         ftp = FTP(ftp_server)
+    #         ftp.login(user=ftp_username, passwd=ftp_password)
+    #         logger.info(f"Connected to FTP server: {ftp_server}")
+
+    #         # Change to the target directory
+    #         ftp.cwd(remote_directory)
+    #         logger.debug(f"Changed to directory: {remote_directory}")
+    #         # Extract the file name from the full path
+    #         file_name = os.path.basename(file_to_upload)
             
-            # Upload the file
-            with open(file_to_upload, "rb") as file:
-                ftp.storbinary(f"STOR {file_name}", file)
-                logger.info(f"Uploaded file: {file_name}")
+    #         # Upload the file
+    #         with open(file_to_upload, "rb") as file:
+    #             ftp.storbinary(f"STOR {file_name}", file)
+    #             logger.info(f"Uploaded file: {file_name}")
             
-            self.delete_file_locally(file_name=file_to_upload)
-            # Close the connection
-            ftp.quit()
-            logger.info("FTP connection closed.")
+    #         self.delete_file_locally(file_name=file_to_upload)
+    #         # Close the connection
+    #         ftp.quit()
+    #         logger.info("FTP connection closed.")
 
         except Exception as e:
             logger.error(f"An error occurred during FTP upload: {e}")
