@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import URL, ImageMetadata,CustomPeriodicTask,FTPConfig
+from django.core.exceptions import ValidationError
 from django.db import transaction
 from django.db.models.signals import post_save
 from yt_ftp.signals.handlers import start_celery_task
@@ -99,7 +100,8 @@ class URLSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         with transaction.atomic():
             image_metadata_data = validated_data.pop('image_metadata', None)
-
+            ftp_config_ids = validated_data.pop('ftp_configs')  # This is a list of integers
+            
             #USING URL_UPDATED TO CALL SAVE METHOD EVEN FOR CHANGES IN IMAGE METADATA.
 
             # Track whether the URL instance is updated
@@ -127,6 +129,18 @@ class URLSerializer(serializers.ModelSerializer):
                 if metadata_updated:
                     image_metadata_instance.save()
                     instance.save()  # Save URL again to trigger post_save
+                    
+            # Validate and update ftp_configs
+            if ftp_config_ids is not None:  # Explicit check (to allow empty lists)
+                # Query the existing FTP configs that match the given IDs
+                valid_ftp_configs = list(FTPConfig.objects.filter(id__in=ftp_config_ids))
 
+                # Ensure all IDs exist, otherwise raise an error
+                if len(valid_ftp_configs) != len(ftp_config_ids):
+                    raise ValidationError("One or more provided FTP config IDs do not exist.")
+
+                # Set the ManyToMany relationship with validated FTP configs
+                instance.ftp_configs.set(valid_ftp_configs)
+                instance.save()  # Save after updating M2M field
+                    
             return instance
-

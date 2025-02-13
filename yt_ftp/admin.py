@@ -27,6 +27,6 @@ class URLAdmin(admin.ModelAdmin):
 
 @admin.register(FTPConfig)
 class FTPConfig(admin.ModelAdmin):
-    list_display = ('ftp_username', 'ftp_password_encrypted', 'remote_directory')
+    list_display = ('id','ftp_username', 'ftp_password_encrypted', 'remote_directory')
     search_fields = ('ftp_username', 'remote_directory')
     
